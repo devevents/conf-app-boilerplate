@@ -9,7 +9,12 @@ angular.module('confboilerplate.controllers', [])
 })
 
 .controller('LocationCtrl', function($scope) {
+  $scope.position = {
+  };
 
+  $scope.$on('mapInitialized', function(event, map) {
+    $scope.map = map;
+  });
 })
 
 .controller('SpeakersCtrl', function($scope) {

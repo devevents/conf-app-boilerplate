@@ -1,0 +1,20 @@
+[
+  {
+    "name":"Speaker Example 1",
+    "bio":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n",
+    "img":"http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker-example.jpg",
+    "company":"Company1",
+    "twitter":"example1",
+    "tags":["Company", "Framework"],
+    "event_id":"3"
+  },
+  {
+    "name":"Speaker Example 2",
+    "bio":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n",
+    "img":"http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker-example.jpg",
+    "company":"Company2",
+    "twitter":"example2",
+    "tags":["Company", "Framework"],
+    "event_id":"4"
+  }
+]

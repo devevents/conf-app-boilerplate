@@ -1,7 +1,7 @@
 angular.module('confboilerplate.directives', [])
 
-.directive('attraction', function() {
+.directive('scheduleAttraction', function() {
   return {
-    templateUrl: 'templates/partials/attraction.html'
+    templateUrl: 'templates/partials/schedule-attraction.html'
   };
 });

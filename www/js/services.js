@@ -23,8 +23,15 @@ angular.module('confboilerplate.services', [])
     var dfd = $q.defer();
 
     $http.get('http://devevents.github.io/conf-app-boilerplate/data/schedule.json')
-	.success(function(data) {
-      dfd.resolve(data);
+    .success(function(data) {
+
+      var 1 = _.filter(data, function(attraction){ return attraction.date =="1" }),
+          2 = _.filter(data, function(attraction){ return attraction.date =="2" });
+
+      dfd.resolve({
+        "1": 1,
+        "2": 2
+      });
     })
     .error(function(data) {
       dfd.reject(data);

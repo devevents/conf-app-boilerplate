@@ -86,7 +86,7 @@ angular.module('confboilerplate', [
         url: "/attraction/:attractionId",
         views: {
           'menuContent': {
-            templateUrl: "templates/partials/attraction.html",
+            templateUrl: "templates/attraction.html",
             controller: 'AttractionCtrl'
           }
         }

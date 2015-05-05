@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col">
+    <span>{{attraction.time_from}}</span>
+    <span ng-show="attraction.time_to">to {{attraction.time_to}}</span>
+  </div>
+  <a ng-if="attraction.type !== 'global'" class="col col-75" style="background-color:#E6E6E6;text-decoration: none;" ui-sref="app.attraction({attractionId: attraction.id})">
+    <p ng-bind-html="attraction.title"></p>
+    <p ng-show="{{ attraction.speakers }}">
+      <span ng-repeat="speaker in attraction.speakers">{{speaker.name}}{{$last ? '' : ', '}}</span>
+    </p>
+    <p ng-show="attraction.room">{{attraction.room}}</p>
+    <div>{{attraction.type}}</div>
+  </a>
+  <div ng-if="attraction.type === 'global'" class="col col-75">
+    <p ng-bind-html="attraction.title"></p>
+    <p>{{attraction.room}}</p>
+  </div>
+</div>

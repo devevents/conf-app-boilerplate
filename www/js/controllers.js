@@ -10,6 +10,8 @@ angular.module('confboilerplate.controllers', [])
 
 .controller('LocationCtrl', function($scope) {
   $scope.position = {
+    lat: -3.771020,
+    lng: -38.483531
   };
 
   $scope.$on('mapInitialized', function(event, map) {

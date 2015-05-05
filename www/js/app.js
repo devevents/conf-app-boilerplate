@@ -4,7 +4,10 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('confboilerplate', [
+  'ionic',
+  'confboilerplate.controllers'
+])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -22,7 +25,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
+  
   .state('app', {
     url: "/app",
     abstract: true,
@@ -30,42 +33,76 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: "/search",
+  .state('app.about', {
+    url: "/about",
     views: {
       'menuContent': {
-        templateUrl: "templates/search.html"
+        templateUrl: "templates/about.html",
+        controller: 'AboutCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-    url: "/browse",
+  .state('app.location', {
+    url: "/location",
     views: {
       'menuContent': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/location.html",
+        controller: 'LocationCtrl'
       }
     }
   })
-    .state('app.playlists', {
-      url: "/playlists",
-      views: {
-        'menuContent': {
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+  
+  .state('app.speakers', {
+    url: "/speakers",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/speakers.html",
+        controller: 'SpeakersCtrl'
+      }
+    }
+  })
+
+  .state('app.schedule', {
+    url: "/schedule",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/schedule.html",
+        controller: 'ScheduleCtrl'
+      }
+    }
+  })
+
+      .state('app.details', {
+        url: "/details/:detailsId",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/partials/details.html",
+            controller: 'DetailsCtrl'
+          }
         }
-      }
-    })
-
-  .state('app.single', {
-    url: "/playlists/:playlistId",
+      })
+  
+  .state('app.sponsors', {
+    url: "/sponsors",
     views: {
       'menuContent': {
-        templateUrl: "templates/playlist.html",
-        controller: 'PlaylistCtrl'
+        templateUrl: "templates/sponsors.html",
+        controller: 'SponsorsCtrl'
+      }
+    }
+  })
+  
+  .state('app.partners', {
+    url: "/partners",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/partners.html",
+        controller: 'PartnersCtrl'
       }
     }
   });
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/schedule');
 });

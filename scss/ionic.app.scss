@@ -21,6 +21,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-@import "speakers.scss";
-@import "location.scss";
-@import "schedule.scss";
+// Include custom styles
+@import "scss/conf-boilerplate";
+@import "scss/main-menu";
+@import "scss/location";
+@import "scss/speakers";
+@import "scss/schedule";
+@import "scss/attraction";

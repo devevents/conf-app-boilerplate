@@ -3,7 +3,14 @@
     <span>{{attraction.type}}</span>
   </ion-nav-title>
   <ion-content>
-    <img ng-src="{{attraction.speakers[0].image}}"/>
+    <ion-slide-box ng-show="attraction.speakers.length > 1" auto-play="true" does-continue="true">
+      <ion-slide ng-repeat="speaker in attraction.speakers">
+        <div style="width:100vw; overflow:hidden;">
+          <img ng-src="{{speaker.image}}"/>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+    <img ng-show="attraction.speakers.length == 1" ng-src="{{attraction.speakers[0].image}}"/>
     <div>
       <span ng-bind-html="attraction.title"></span>
       <span ng-show="attraction.speakers">By

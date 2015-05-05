@@ -6,7 +6,7 @@
     "time_to":"10:00",
     "type":"global",
     "room":"",
-	"date":"1"
+	"date":"day1"
   },
   {
     "id":"2",
@@ -23,14 +23,14 @@
     "background_img":"http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker-example.jpg",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "room":"Auditorium 1",
-	"date":"1"
+	"date":"day1"
   },
   {
     "id":"3",
     "title":"Close",
     "time_from":"18:00",
     "type":"global",
-    "date":"1"
+    "date":"day1"
   },
   {
     "id":"4",
@@ -39,7 +39,7 @@
     "time_to":"10:00",
     "type":"global",
     "room":"",
-	"date":"2"
+	"date":"day2"
   },
   {
     "id":"5",
@@ -56,13 +56,13 @@
     "background_img":"http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker-example.jpg",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "room":"Small Auditorium",
-	"date":"2"
+	"date":"day2"
   },
   {
     "id":"6",
     "title":"Close",
     "time_from":"18:00",
     "type":"global",
-    "date":"2"
+    "date":"day2"
   }
 ]

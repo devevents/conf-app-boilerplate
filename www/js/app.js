@@ -12,7 +12,10 @@ angular.module('underscore', [])
 angular.module('confboilerplate', [
   'ionic',
   'ngMap',
-  'confboilerplate.controllers'
+  'confboilerplate.controllers',
+  'confboilerplate.services',
+  'confboilerplate.filters',
+  'confboilerplate.directives'
 ])
 
 .run(function($ionicPlatform) {

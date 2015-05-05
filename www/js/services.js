@@ -25,12 +25,12 @@ angular.module('confboilerplate.services', [])
     $http.get('http://devevents.github.io/conf-app-boilerplate/data/schedule.json')
     .success(function(data) {
 
-      var 1 = _.filter(data, function(attraction){ return attraction.date =="1" }),
-          2 = _.filter(data, function(attraction){ return attraction.date =="2" });
+      var day1 = _.filter(data, function(attraction){ return attraction.date =="day1" }),
+          day2 = _.filter(data, function(attraction){ return attraction.date =="day2" });
 
       dfd.resolve({
-        "1": 1,
-        "2": 2
+        "day1": day1,
+        "day2": day2
       });
     })
     .error(function(data) {

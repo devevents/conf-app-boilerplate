@@ -3,6 +3,16 @@
     <span>Location</span>
   </ion-nav-title>
   <ion-content>
-    <h1>Location</h1>
+    <map data-tap-disabled="true" center="{{position.lat}},{{position.lng}}" zoom="15" disable-default-u-i="true">
+      <marker position="{{position.lat}},{{position.lng}}" visible="true"></marker>
+    </map>
+    <div>
+      <div class="row">
+        <div class="col col-top">
+          <p><strong>Auditório - Faculdade 7 de Setembro</strong></p>
+          <p>Av. Alm. Maximiano da Fonseca, 1395<br>Fortaleza, CE</p>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

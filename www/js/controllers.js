@@ -27,8 +27,8 @@ angular.module('confboilerplate.controllers', [])
 
 })
 
-.controller('DetailsCtrl', function($scope, $stateParams) {
-  $scope.detailsId = $stateParams.detailsId;
+.controller('AttractionCtrl', function($scope, $stateParams) {
+  $scope.attractionId = $stateParams.attractionId;
 })
 
 .controller('SponsorsCtrl', function($scope) {

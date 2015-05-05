@@ -74,12 +74,12 @@ angular.module('confboilerplate', [
     }
   })
 
-      .state('app.details', {
-        url: "/details/:detailsId",
+      .state('app.attraction', {
+        url: "/attraction/:attractionId",
         views: {
           'menuContent': {
-            templateUrl: "templates/partials/details.html",
-            controller: 'DetailsCtrl'
+            templateUrl: "templates/partials/attraction.html",
+            controller: 'AttractionCtrl'
           }
         }
       })

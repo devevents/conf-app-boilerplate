@@ -1,22 +1,15 @@
 [
   {
     "id":"1",
-    "title":"Registration & Breakfast",
+    "title":"Registration",
     "time_from":"9:00",
     "time_to":"10:00",
     "type":"global",
-    "room":""
+    "room":"",
+	"date":"1"
   },
   {
     "id":"2",
-    "title":"Opening",
-    "time_from":"10:00",
-    "time_to":"10:30",
-    "type":"global",
-    "room":""
-  },
-  {
-    "id":"3",
     "title":"Talk Example 1",
     "time_from":"10:30",
     "time_to":"11:30",
@@ -29,13 +22,30 @@
     ],
     "background_img":"http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker-example.jpg",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "room":"Auditorium 1"
+    "room":"Auditorium 1",
+	"date":"1"
+  },
+  {
+    "id":"3",
+    "title":"Close",
+    "time_from":"18:00",
+    "type":"global",
+    "date":"1"
   },
   {
     "id":"4",
+    "title":"Breakfast",
+    "time_from":"9:00",
+    "time_to":"10:00",
+    "type":"global",
+    "room":"",
+	"date":"2"
+  },
+  {
+    "id":"5",
     "title":"Talk Example 2",
-    "time_from":"11:30",
-    "time_to":"11:50",
+    "time_from":"10:30",
+    "time_to":"11:30",
     "type":"lightningtalk",
     "speakers":[
       {
@@ -45,14 +55,14 @@
     ],
     "background_img":"http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker-example.jpg",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "room":"Small Auditorium"
+    "room":"Small Auditorium",
+	"date":"2"
   },
   {
-    "id":"5",
-    "title":"Lunch!",
-    "time_from":"11:50",
-    "time_to":"13:00",
+    "id":"6",
+    "title":"Close",
+    "time_from":"18:00",
     "type":"global",
-    "room":"Floor 2th"
+    "date":"2"
   }
 ]

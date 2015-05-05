@@ -1,5 +1,6 @@
 angular.module('underscore', [])
 .factory('_', function() {
+  return window._;
 });
 
 // Ionic Starter App

@@ -7675,3 +7675,264 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+* {
+  color: #444444; }
+
+.bar.app-top-bar {
+  background-color: #313131; }
+  .bar.app-top-bar .title {
+    color: #FFFFFF !important; }
+    .bar.app-top-bar .title * {
+      color: #FFFFFF !important; }
+  .bar.app-top-bar .button {
+    color: #FFFFFF !important; }
+    .bar.app-top-bar .button * {
+      color: #FFFFFF !important; }
+
+.menu-header-bar {
+  background-color: #313131; }
+  .menu-header-bar .menu-header-bar-title {
+    color: #FFFFFF; }
+
+.loading-container .loading * {
+  color: #FFFFFF; }
+
+.platform-ios ion-list .list {
+  margin-top: 20px; }
+
+.main-menu ion-content {
+  background-color: #e8e242; }
+.main-menu .menu-header-bar-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  margin: 0px; }
+  .main-menu .menu-header-bar-title .featured {
+    color: #313131;
+    font-weight: 600; }
+.main-menu ion-item.item {
+  border-right: none;
+  border-left: none;
+  border-color: rgba(179, 179, 179, 0.2);
+  background-color: #e8e242; }
+  .main-menu ion-item.item .item-content {
+    background-color: #e8e242;
+    padding: 20px;
+    padding-right: 60px;
+    text-align: right; }
+    .main-menu ion-item.item .item-content .icon {
+      width: 30px;
+      right: 20px;
+      left: initial; }
+    .main-menu ion-item.item .item-content .icon:before {
+      color: #313131;
+      font-size: calc(30px - 4px); }
+  .main-menu ion-item.item .item-content.activated {
+    background-color: #eee96f; }
+  .main-menu ion-item.item .menu-text {
+    color: #FFFFFF;
+    font-weight: 500; }
+.main-menu ion-item.item:first-child {
+  border-top: none; }
+.main-menu ion-item.item:last-child {
+  border-bottom: none; }
+
+.location-view .map {
+  height: calc((((100vh - 44px) * 65) /100)); }
+.location-view .location-position {
+  height: calc((((100vh - 44px) * (100 - 65)) /100));
+  border-bottom: none; }
+  .location-view .location-position .row {
+    height: 50%;
+    margin: 0px; }
+  .location-view .location-position .location-name {
+    margin-bottom: 5px; }
+
+.speakers-view {
+  background: #EAEAEA; }
+  .speakers-view .speaker .item.title {
+    background-color: #e8e242; }
+  .speakers-view .speaker .item-image {
+    border-top: none; }
+  .speakers-view .speaker-name {
+    text-align: center;
+    text-transform: uppercase;
+    color: #313131;
+    font-weight: bold;
+    font-size: calc(12px + 6px); }
+  .speakers-view .speaker-bio {
+    margin-top: 0px; }
+  .speakers-view .speaker-tags {
+    margin-bottom: 10px; }
+    .speakers-view .speaker-tags .speaker-tags-list {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap; }
+    .speakers-view .speaker-tags .badge {
+      position: initial;
+      margin: 4px 2px;
+      background-color: #e8e242; }
+    .speakers-view .speaker-tags .speaker-tag-item {
+      text-align: center; }
+  .speakers-view .speaker-buttons {
+    background-color: #FFFFFF; }
+    .speakers-view .speaker-buttons .row, .speakers-view .speaker-buttons .col {
+      padding: 0px; }
+    .speakers-view .speaker-buttons .button {
+      margin: 0px;
+      border-color: #313131;
+      color: #313131; }
+      .speakers-view .speaker-buttons .button.activated {
+        background-color: #313131;
+        color: #FFFFFF; }
+    .speakers-view .speaker-buttons .col:first-child {
+      margin-right: 8px; }
+    .speakers-view .speaker-buttons .col:last-child {
+      margin-left: 8px; }
+
+.schedule-view {
+  background: #EAEAEA; }
+  .schedule-view .tabs-striped .tabs {
+    background-color: #313131; }
+    .schedule-view .tabs-striped .tabs .tab-item {
+      max-width: none; }
+  .schedule-view .tab-title {
+    color: #FFFFFF;
+    font-size: calc(12px + 2px);
+    font-weight: 400; }
+  .schedule-view .tab-title.tab-item.tab-item-active {
+    border-color: #e8e242;
+    margin-top: 0px;
+    border-width: 0px 0px 4px 0px !important; }
+    .schedule-view .tab-title.tab-item.tab-item-active .tab-title {
+      font-weight: 600; }
+  .schedule-view .attraction-time {
+    margin-top: 10px; }
+    .schedule-view .attraction-time .time-from {
+      display: block;
+      font-size: calc(12px + 2px); }
+    .schedule-view .attraction-time .time-to {
+      font-size: calc(12px - 1px);
+      color: #5e5e5e;
+      display: block; }
+  .schedule-view .attraction-content {
+    text-decoration: none;
+    background-color: #afb6bb;
+    background-size: 73vw;
+    background-position-y: 15%;
+    min-height: 40vw;
+    padding: 14px;
+    border-radius: 5px;
+    position: relative;
+    background-size: 100%; }
+    .schedule-view .attraction-content.global {
+      min-height: 20vw; }
+    .schedule-view .attraction-content.talk, .schedule-view .attraction-content.workshop, .schedule-view .attraction-content.keynote {
+      margin-bottom: 25px;
+      border-radius: 5px 5px 0px 0px; }
+      .schedule-view .attraction-content.talk .attraction-title, .schedule-view .attraction-content.talk .attraction-room, .schedule-view .attraction-content.workshop .attraction-title, .schedule-view .attraction-content.workshop .attraction-room, .schedule-view .attraction-content.keynote .attraction-title, .schedule-view .attraction-content.keynote .attraction-room {
+        color: #FFFFFF; }
+    .schedule-view .attraction-content.talk:after, .schedule-view .attraction-content.workshop:after, .schedule-view .attraction-content.keynote:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px 5px 0px 0px; }
+    .schedule-view .attraction-content.talk:after {
+      background-color: rgba(46, 204, 113, 0.6); }
+    .schedule-view .attraction-content.workshop:after {
+      background-color: rgba(26, 188, 156, 0.6); }
+    .schedule-view .attraction-content.keynote:after {
+      background-color: rgba(52, 152, 219, 0.6); }
+    .schedule-view .attraction-content .attraction-title {
+      font-size: calc(12px + 4px);
+      font-weight: 500;
+      margin: 0px;
+      position: relative;
+      z-index: 100; }
+    .schedule-view .attraction-content .attraction-room {
+      font-size: 12px;
+      z-index: 100;
+      position: relative;
+      margin-bottom: 0px; }
+    .schedule-view .attraction-content .attraction-speakers {
+      z-index: 100;
+      position: relative;
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 0px; }
+      .schedule-view .attraction-content .attraction-speakers * {
+        color: #FFFFFF; }
+    .schedule-view .attraction-content .attraction-type-tag {
+      position: absolute;
+      bottom: -25px;
+      left: 0px;
+      width: 100%;
+      border-radius: 0px 0px 4px 4px;
+      height: 25px;
+      line-height: 25px;
+      padding: 0px 14px; }
+      .schedule-view .attraction-content .attraction-type-tag.keynote-attraction {
+        background-color: #217dbb;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #FFFFFF; }
+      .schedule-view .attraction-content .attraction-type-tag.talk-attraction {
+        background: #25a25a;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #FFFFFF; }
+      .schedule-view .attraction-content .attraction-type-tag.workshop-attraction {
+        background: #148f77;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #FFFFFF; }
+
+.nav-bar-title {
+  text-transform: capitalize; }
+
+.icon.button.share-attraction::before {
+  margin-top: 0px !important; }
+
+.attraction-view {
+  background: #EAEAEA; }
+  .attraction-view .speaker-image {
+    height: 100vw; }
+  .attraction-view .attraction-details {
+    min-height: 70px;
+    padding: 22px;
+    background-color: #2b2b2b;
+    margin-top: -8px; }
+    .attraction-view .attraction-details .attraction-title {
+      color: #FFFFFF;
+      font-size: 16px;
+      font-size: calc(12px + 4px);
+      font-weight: 500;
+      display: block; }
+    .attraction-view .attraction-details .attraction-speakers {
+      color: #e8e242;
+      font-size: calc(12px + 2px);
+      font-weight: 400;
+      display: block; }
+      .attraction-view .attraction-details .attraction-speakers .attraction-speaker {
+        color: inherit;
+        font-weight: 600; }
+      .attraction-view .attraction-details .attraction-speakers .attraction-speaker-concat {
+        color: inherit;
+        font-weight: 400; }
+  .attraction-view .attraction-description {
+    font-size: calc(12px + 2px);
+    padding: 20px; }
+    .attraction-view .attraction-description ul {
+      list-style: inherit;
+      padding-left: 40px; }

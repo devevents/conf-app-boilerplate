@@ -15,7 +15,7 @@
 
   .menu-header-bar-title
   {
-    font-size: $menu-title-font-size;
+    font-size: $menu-logo-font-size;
     font-weight: 500;
     color: $main-menu-color;
     position: absolute;
@@ -23,7 +23,7 @@
     right: $category-margin;
     margin:0px;
 
-    .logo
+    .featured
     {
       color: $top-bar-bg;
       font-weight: 600;

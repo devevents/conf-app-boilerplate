@@ -5,7 +5,7 @@
     @include cssCalc("height", "(((100vh - #{($bar-height)}) * #{($location-map-porcentage)}) /100)");
   }
 
-  .location-location
+  .location-position
   {
     @include cssCalc("height", "(((100vh - #{($bar-height)}) * (100 - #{($location-map-porcentage)})) /100)");
     border-bottom: none;

@@ -3,13 +3,13 @@
     <span>Location</span>
   </ion-nav-title>
   <ion-content>
-    <map data-tap-disabled="true" center="{{position.lat}},{{position.lng}}" zoom="15" disable-default-u-i="true">
+    <map class="map" data-tap-disabled="true" center="{{position.lat}},{{position.lng}}" zoom="15" disable-default-u-i="true">
       <marker position="{{position.lat}},{{position.lng}}" visible="true"></marker>
     </map>
-    <div>
+    <div class="location-position">
       <div class="row">
         <div class="col col-top">
-          <p><strong>Auditório - Faculdade 7 de Setembro</strong></p>
+          <p class="location-name"><strong>Auditório - Faculdade 7 de Setembro</strong></p>
           <p>Av. Alm. Maximiano da Fonseca, 1395<br>Fortaleza, CE</p>
         </div>
       </div>

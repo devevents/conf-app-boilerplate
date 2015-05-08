@@ -7815,10 +7815,10 @@ a.button {
       font-weight: 600; }
   .schedule-view .attraction-time {
     margin-top: 10px; }
-    .schedule-view .attraction-time .time-from {
+    .schedule-view .attraction-time .time-start {
       display: block;
       font-size: calc(12px + 2px); }
-    .schedule-view .attraction-time .time-to {
+    .schedule-view .attraction-time .time-finish {
       font-size: calc(12px - 1px);
       color: #5e5e5e;
       display: block; }
@@ -7832,14 +7832,14 @@ a.button {
     border-radius: 5px;
     position: relative;
     background-size: 100%; }
-    .schedule-view .attraction-content.global {
+    .schedule-view .attraction-content.general {
       min-height: 20vw; }
-    .schedule-view .attraction-content.talk, .schedule-view .attraction-content.workshop, .schedule-view .attraction-content.keynote {
+    .schedule-view .attraction-content.talk, .schedule-view .attraction-content.workshop, .schedule-view .attraction-content.lightningtalk {
       margin-bottom: 25px;
       border-radius: 5px 5px 0px 0px; }
-      .schedule-view .attraction-content.talk .attraction-title, .schedule-view .attraction-content.talk .attraction-room, .schedule-view .attraction-content.workshop .attraction-title, .schedule-view .attraction-content.workshop .attraction-room, .schedule-view .attraction-content.keynote .attraction-title, .schedule-view .attraction-content.keynote .attraction-room {
+      .schedule-view .attraction-content.talk .attraction-title, .schedule-view .attraction-content.talk .attraction-room, .schedule-view .attraction-content.workshop .attraction-title, .schedule-view .attraction-content.workshop .attraction-room, .schedule-view .attraction-content.lightningtalk .attraction-title, .schedule-view .attraction-content.lightningtalk .attraction-room {
         color: #FFFFFF; }
-    .schedule-view .attraction-content.talk:after, .schedule-view .attraction-content.workshop:after, .schedule-view .attraction-content.keynote:after {
+    .schedule-view .attraction-content.talk:after, .schedule-view .attraction-content.workshop:after, .schedule-view .attraction-content.lightningtalk:after {
       content: "";
       display: block;
       position: absolute;
@@ -7852,8 +7852,8 @@ a.button {
       background-color: rgba(46, 204, 113, 0.6); }
     .schedule-view .attraction-content.workshop:after {
       background-color: rgba(26, 188, 156, 0.6); }
-    .schedule-view .attraction-content.keynote:after {
-      background-color: rgba(52, 152, 219, 0.6); }
+    .schedule-view .attraction-content.lightningtalk:after {
+      background-color: rgba(46, 204, 113, 0.6); }
     .schedule-view .attraction-content .attraction-title {
       font-size: calc(12px + 4px);
       font-weight: 500;
@@ -7882,8 +7882,8 @@ a.button {
       height: 25px;
       line-height: 25px;
       padding: 0px 14px; }
-      .schedule-view .attraction-content .attraction-type-tag.keynote-attraction {
-        background-color: #217dbb;
+      .schedule-view .attraction-content .attraction-type-tag.lightningtalk-attraction {
+        background-color: #25a25a;
         text-transform: capitalize;
         font-weight: 500;
         color: #FFFFFF; }

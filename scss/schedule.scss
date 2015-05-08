@@ -33,12 +33,12 @@
   .attraction-time{
     margin-top:10px;
 
-    .time-from{
+    .time-start{
       display: block;
       @include cssCalc("font-size", "#{($font-size)} + 2px");
     }
 
-    .time-to{
+    .time-finish{
       @include cssCalc("font-size", "#{($font-size)} - 1px");
       color: lighten($content-color, 10);
       display: block;
@@ -48,7 +48,7 @@
   .attraction-content
   {
     text-decoration: none;
-    background-color: darken($global-bg-color, 5);
+    background-color: darken($general-bg-color, 5);
     background-size: 73vw;
     background-position-y: 15%;
     min-height: 40vw;
@@ -57,11 +57,11 @@
     position: relative;
     background-size: 100%;
 
-    &.global{
+    &.general{
       min-height: 20vw;
     }
 
-    &.talk, &.workshop, &.keynote
+    &.talk, &.workshop, &.lightningtalk
     {
       margin-bottom: 25px;
       border-radius: 5px 5px 0px 0px;
@@ -71,7 +71,7 @@
       }
     }
 
-    &.talk:after, &.workshop:after, &.keynote:after {
+    &.talk:after, &.workshop:after, &.lightningtalk:after {
       content: "";
       display: block;
       position: absolute;
@@ -88,8 +88,8 @@
     &.workshop:after{
       background-color: rgba($workshop-bg-color, 0.6);
     }
-    &.keynote:after{
-      background-color: rgba($keynote-bg-color, 0.6);
+    &.lightningtalk:after{
+      background-color: rgba($lightningtalk-bg-color, 0.6);
     }
 
 
@@ -132,9 +132,9 @@
       line-height: 25px;
       padding: 0px 14px;
 
-      &.keynote-attraction
+      &.lightningtalk-attraction
       {
-        background-color: darken($keynote-bg-color, 10);
+        background-color: darken($lightningtalk-bg-color, 10);
         text-transform: capitalize;
         font-weight: 500;
         color: $attraction-color;

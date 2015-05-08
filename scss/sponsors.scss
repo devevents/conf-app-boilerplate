@@ -1,0 +1,61 @@
+.sponsors-view{
+  background: $content-bg;
+
+  .sponsor
+  {
+    .item.title
+    {
+      background-color: $main-menu-bg;
+    }
+
+    .item-image
+    {
+      border-top: none;
+    }
+  }
+
+  .sponsor-name{
+    text-align: center;
+    text-transform: uppercase;
+    color: $top-bar-bg;
+    font-weight: bold;
+    // font-size: 18px;
+    @include cssCalc("font-size", "#{($font-size)} + 6px");
+  }
+  .sponsor-description{
+    margin-top:0px;
+  }
+
+  .sponsor-buttons
+  {
+    background-color: $sponsor-actions-bg;
+
+    .row,
+    .col
+    {
+      padding:0px;
+    }
+
+    .button
+    {
+      margin:0px;
+      border-color: $top-bar-bg;
+      color: $top-bar-bg;
+
+      &.activated{
+        background-color: $top-bar-bg;
+        color: $top-bar-color;
+      }
+    }
+
+    .col:first-child
+    {
+      margin-right:8px;
+    }
+
+    .col:last-child
+    {
+      margin-left:8px;
+    }
+  }
+}

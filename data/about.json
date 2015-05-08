@@ -4,6 +4,7 @@
     "edition": "2º Edition",
     "webSite": "http://exemplo.com.br",
     "email": "exampler@exampler.com",
+    "github": "http://github.com/examplerName",
     "twitter": "http://twitter.com/examplerName",
     "facebook": "http://facebook.com/examplerName",
     "photo": "http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker.png",

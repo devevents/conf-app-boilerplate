@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col attraction-time">
-    <span class="time-from">{{attraction.time_from}}</span>
-    <span ng-show="attraction.time_to" class="time-to">to {{attraction.time_to}}</span>
+    <span class="time-start">{{time.start}}</span>
+    <span ng-show="attraction.time" class="time-finish"> to {{time.finish}}</span>
   </div>
-  <a ng-if="attraction.type !== 'global'" class="col col-75 attraction-content {{attraction.type}}" style="background-image:url({{attraction.background_img}})" ui-sref="app.attraction({attractionId: attraction.id})">
+  <a ng-if="attraction.type !== 'general'" class="col col-75 attraction-content {{attraction.type}}" style="background-image:url({{attraction.background_img}})" ui-sref="app.attraction({attractionId: attraction.id})">
     <p class="attraction-title" ng-bind-html="attraction.title"></p>
     <p class="attraction-speakers" ng-show="{{ attraction.speakers }}">
       <span ng-repeat="speaker in attraction.speakers">{{speaker.name}}{{$last ? '' : ', '}}</span>
@@ -11,7 +11,7 @@
     <p class="attraction-room" ng-show="attraction.room">{{attraction.room}}</p>
     <div class="attraction-type-tag {{attraction.type+'-attraction'}}">{{attraction.type}}</div>
   </a>
-  <div ng-if="attraction.type === 'global'" class="col col-75 attraction-content {{attraction.type}}">
+  <div ng-if="attraction.type === 'general'" class="col col-75 attraction-content {{attraction.type}}">
     <p class="attraction-title" ng-bind-html="attraction.title"></p>
     <p class="attraction-room">{{attraction.room}}</p>
   </div>

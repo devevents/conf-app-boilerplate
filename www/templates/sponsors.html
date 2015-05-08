@@ -2,7 +2,43 @@
   <ion-nav-title>
     <span>Sponsors</span>
   </ion-nav-title>
-  <ion-content>
-    <h1>Sponsors</h1>
-  </ion-content>
+  <ion-tabs class="tabs-striped tabs-top tabs-color-light">
+
+    <ion-tab class="tab-title" title="GOLD">
+        <ion-pane>
+            <ion-content class="padding">
+                <div class="card">
+                    <div class="item item-text-wrap" ng-repeat="sponsor in sponsors.gold">
+                        <div sponsors-each class="sponsors-each"></div>
+                    </div>
+                </div>
+            </ion-content>
+      </ion-pane>
+    </ion-tab>
+	
+    <ion-tab class="tab-title" title="SILVER">
+        <ion-pane>
+            <ion-content class="padding">
+                <div class="card">
+                    <div class="item item-text-wrap" ng-repeat="sponsor in sponsors.silver">
+                        <div sponsors-each class="sponsors-each"></div>
+                    </div>
+                </div>
+            </ion-content>
+      </ion-pane>
+    </ion-tab>
+	
+    <ion-tab class="tab-title" title="BRONZE">
+        <ion-pane>
+            <ion-content class="padding">
+                <div class="card">
+                    <div class="item item-text-wrap" ng-repeat="sponsor in sponsors.bronze">
+                        <div sponsors-each class="sponsors-each"></div>
+                    </div>
+                </div>
+            </ion-content>
+      </ion-pane>
+    </ion-tab>
+	
+  </ion-tabs>
 </ion-view>

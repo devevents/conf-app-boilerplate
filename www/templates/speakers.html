@@ -3,7 +3,8 @@
     <span>Speakers</span>
   </ion-nav-title>
   <ion-content>
-    <div class="list card speaker" ng-repeat="speaker in speakers">
+  <div class="card" ng-repeat="speaker in speakers">
+    <div class="list card speaker" >
       <div class="item title">
         <h2 class="speaker-name">{{speaker.name}}</h2>
       </div>
@@ -32,5 +33,6 @@
         </div>
       </div>
     </div>
+  </div>
   </ion-content>
 </ion-view>

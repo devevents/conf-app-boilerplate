@@ -61,7 +61,7 @@
       min-height: 20vw;
     }
 
-    &.talk, &.workshop, &.lightningtalk
+    &.talk, &.lightningtalk, &.workshop, &.keynote
     {
       margin-bottom: 25px;
       border-radius: 5px 5px 0px 0px;
@@ -71,7 +71,7 @@
       }
     }
 
-    &.talk:after, &.workshop:after, &.lightningtalk:after {
+    &.talk:after, &.lightningtalk:after, &.workshop:after, &.keynote:after {
       content: "";
       display: block;
       position: absolute;
@@ -85,13 +85,15 @@
     &.talk:after{
       background-color: rgba($talk-bg-color, 0.6);
     }
-    &.workshop:after{
-      background-color: rgba($workshop-bg-color, 0.6);
-    }
     &.lightningtalk:after{
       background-color: rgba($lightningtalk-bg-color, 0.6);
     }
-
+    &.workshop:after{
+      background-color: rgba($workshop-bg-color, 0.6);
+    }
+    &.keynote:after{
+      background-color: rgba($keynote-bg-color, 0.6);
+    }	
 
     .attraction-title{
       @include cssCalc("font-size", "#{($font-size)} + 4px");
@@ -132,14 +134,6 @@
       line-height: 25px;
       padding: 0px 14px;
 
-      &.lightningtalk-attraction
-      {
-        background-color: darken($lightningtalk-bg-color, 10);
-        text-transform: capitalize;
-        font-weight: 500;
-        color: $attraction-color;
-      }
-
       &.talk-attraction
       {
         background: darken($talk-bg-color, 10);
@@ -147,7 +141,15 @@
         font-weight: 500;
         color: $attraction-color;
       }
-
+	  
+      &.lightningtalk-attraction
+      {
+        background-color: darken($lightningtalk-bg-color, 10);
+        text-transform: capitalize;
+        font-weight: 500;
+        color: $attraction-color;
+      }
+	  
       &.workshop-attraction
       {
         background: darken($workshop-bg-color, 10);
@@ -155,6 +157,15 @@
         font-weight: 500;
         color: $attraction-color;
       }
+	  
+      &.keynote-attraction
+      {
+        background: darken($keynote-bg-color, 10);
+        text-transform: capitalize;
+        font-weight: 500;
+        color: $attraction-color;
+      }
+	  
     }
   }
 }

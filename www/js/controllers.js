@@ -87,7 +87,7 @@ angular.module('confboilerplate.controllers', [])
 
 })
 
-.controller('SponsorsCtrl', function($scope, $http, Sponsors, $ionicLoading) {
+.controller('SponsorsCtrl', function($scope, Sponsors, $ionicLoading) {
   $scope.sponsors = [];
 
   $ionicLoading.show({
@@ -101,11 +101,6 @@ angular.module('confboilerplate.controllers', [])
   },function(err){
     $ionicLoading.hide();
   });
-
-  $scope.goToUrl = function(url){
-    //use inAppBrowser plugin
-    window.open(url, '_blank', 'location=yes');
-  }
 })
 
 .controller('PartnersCtrl', function($scope) {

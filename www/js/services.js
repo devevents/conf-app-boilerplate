@@ -24,7 +24,16 @@ angular.module('confboilerplate.services', [])
 
     $http.get('http://devevents.github.io/conf-app-boilerplate/data/sponsors.json')
     .success(function(data) {
-      dfd.resolve(data);
+
+      var gold = _.filter(data, function(sponsor){ return sponsor.type =="gold" }),
+          silver = _.filter(data, function(sponsor){ return sponsor.type =="silver" }),
+          bronze = _.filter(data, function(sponsor){ return sponsor.type =="bronze" });
+
+      dfd.resolve({
+        "gold": gold,
+        "silver": silver,
+        "bronze": bronze
+      });
     })
     .error(function(data) {
       dfd.reject(data);

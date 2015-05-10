@@ -3,16 +3,31 @@
     <span>Location</span>
   </ion-nav-title>
   <ion-content>
-    <map class="map" data-tap-disabled="true" center="{{position.lat}},{{position.lng}}" zoom="15" disable-default-u-i="true">
-      <marker position="{{position.lat}},{{position.lng}}" visible="true"></marker>
-    </map>
-    <div class="location-position">
-      <div class="row">
-        <div class="col col-top">
-          <p class="location-name"><strong>Auditório - Faculdade 7 de Setembro</strong></p>
-          <p>Av. Alm. Maximiano da Fonseca, 1395<br>Fortaleza, CE</p>
+      <div class="card">
+        <div class="item item-avatar" >
+            <img src="{{position.photo}}"> 
+            <h2>{{position.nameEvent}} </h2>
+            <p>{{position.edition}}</p>
         </div>
-      </div>
-    </div>
+        <div class="item item-body">
+           <map class="map" data-tap-disabled="true" center="{{position.position.lat}},{{position.position.lng}}" zoom="15" disable-default-u-i="true">
+              <marker position="{{position.position.lat}},{{position.position.lng}}" visible="true"></marker>
+           </map>
+        </div>
+        <div class="item item-body ">
+         <strong>City:</strong> {{position.city}}
+        </div>
+        <div class="item item-body ">
+          <strong>Adress:</strong> {{position.adress}}
+        </div>
+        <div class="item item-body ">
+          <strong> Place:</strong> {{position.place}}
+        </div>
+        <div class="item item-body">
+          <strong> Date:</strong> {{position.day}} / {{position.month}} / {{position.year}}
+        </div>
+        
+      </div>    
+    
   </ion-content>
 </ion-view>

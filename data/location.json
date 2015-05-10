@@ -4,11 +4,9 @@
     "city": "Frontilandia",
     "adress": "Av. exampler, 111",
     "place": "Fac. exampler",
-    "data": {
-        "day": "13",
-        "month": "03",
-        "year": "2012"
-    },
+    "day": "13",
+    "month": "03",
+    "year": "2012",
     "position": {
             "lat": "-3.771020",
             "lng": "-38.483531"

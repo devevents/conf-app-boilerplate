@@ -4,7 +4,11 @@
     "city": "Frontilandia",
     "adress": "Av. exampler, 111",
     "place": "Fac. exampler",
-    "date": "00/00/2343",
+    "date": {
+        "day": "13",
+        "month": "03",
+        "year": "2012"
+    },
     "position": {
             "lat": "-3.771020",
             "lng": "-38.483531"

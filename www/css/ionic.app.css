@@ -1,19 +1,7 @@
 @charset "UTF-8";
 /*
-To customize the look and feel of Ionic, you can override the variables
+To customize the look and feel of your application, you can override the variables
 in ionic's _variables.scss file.
-
-For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
 */
 /*!
   Ionicons, v2.0.1
@@ -7676,26 +7664,26 @@ a.button {
   transition-duration: 0s; }
 
 * {
-  color: #444444; }
+  color: #313131; }
 
 .bar.app-top-bar {
   background-color: #313131; }
   .bar.app-top-bar .title {
-    color: #FFFFFF !important; }
+    color: #ffffff !important; }
     .bar.app-top-bar .title * {
-      color: #FFFFFF !important; }
+      color: #ffffff !important; }
   .bar.app-top-bar .button {
-    color: #FFFFFF !important; }
+    color: #ffffff !important; }
     .bar.app-top-bar .button * {
-      color: #FFFFFF !important; }
+      color: #ffffff !important; }
 
 .menu-header-bar {
   background-color: #313131; }
   .menu-header-bar .menu-header-bar-title {
-    color: #FFFFFF; }
+    color: #ffffff; }
 
 .loading-container .loading * {
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .platform-ios ion-list .list {
   margin-top: 20px; }
@@ -7705,7 +7693,7 @@ a.button {
 .main-menu .menu-header-bar-title {
   font-size: 28px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   bottom: 10px;
   right: 20px;
@@ -7733,7 +7721,7 @@ a.button {
   .main-menu ion-item.item .item-content.activated {
     background-color: #eee96f; }
   .main-menu ion-item.item .menu-text {
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 500; }
 .main-menu ion-item.item:first-child {
   border-top: none; }
@@ -7752,7 +7740,7 @@ a.button {
     margin-bottom: 5px; }
 
 .speakers-view {
-  background: #EAEAEA; }
+  background: #eaeaea; }
   .speakers-view .speaker .item.title {
     background-color: #e8e242; }
   .speakers-view .speaker .item-image {
@@ -7782,7 +7770,7 @@ a.button {
     .speakers-view .speaker-tags .speaker-tag-item {
       text-align: center; }
   .speakers-view .speaker-buttons {
-    background-color: #FFFFFF; }
+    background-color: #ffffff; }
     .speakers-view .speaker-buttons .row, .speakers-view .speaker-buttons .col {
       padding: 0px; }
     .speakers-view .speaker-buttons .button {
@@ -7791,20 +7779,20 @@ a.button {
       color: #313131; }
       .speakers-view .speaker-buttons .button.activated {
         background-color: #313131;
-        color: #FFFFFF; }
+        color: #ffffff; }
     .speakers-view .speaker-buttons .col:first-child {
       margin-right: 8px; }
     .speakers-view .speaker-buttons .col:last-child {
       margin-left: 8px; }
 
 .schedule-view {
-  background: #EAEAEA; }
+  background: #eaeaea; }
   .schedule-view .tabs-striped .tabs {
     background-color: #313131; }
     .schedule-view .tabs-striped .tabs .tab-item {
       max-width: none; }
   .schedule-view .tab-title {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: calc(12px + 2px);
     font-weight: 400; }
   .schedule-view .tab-title.tab-item.tab-item-active {
@@ -7820,7 +7808,7 @@ a.button {
       font-size: calc(12px + 2px); }
     .schedule-view .attraction-time .time-finish {
       font-size: calc(12px - 1px);
-      color: #5e5e5e;
+      color: #4b4b4b;
       display: block; }
   .schedule-view .attraction-content {
     text-decoration: none;
@@ -7838,7 +7826,7 @@ a.button {
       margin-bottom: 25px;
       border-radius: 5px 5px 0px 0px; }
       .schedule-view .attraction-content.talk .attraction-title, .schedule-view .attraction-content.talk .attraction-room, .schedule-view .attraction-content.lightningtalk .attraction-title, .schedule-view .attraction-content.lightningtalk .attraction-room, .schedule-view .attraction-content.workshop .attraction-title, .schedule-view .attraction-content.workshop .attraction-room, .schedule-view .attraction-content.keynote .attraction-title, .schedule-view .attraction-content.keynote .attraction-room {
-        color: #FFFFFF; }
+        color: #ffffff; }
     .schedule-view .attraction-content.talk:after, .schedule-view .attraction-content.lightningtalk:after, .schedule-view .attraction-content.workshop:after, .schedule-view .attraction-content.keynote:after {
       content: "";
       display: block;
@@ -7849,13 +7837,13 @@ a.button {
       width: 100%;
       border-radius: 5px 5px 0px 0px; }
     .schedule-view .attraction-content.talk:after {
-      background-color: rgba(46, 204, 113, 0.6); }
+      background-color: rgba(22, 160, 133, 0.6); }
     .schedule-view .attraction-content.lightningtalk:after {
-      background-color: rgba(46, 204, 113, 0.6); }
+      background-color: rgba(39, 174, 96, 0.6); }
     .schedule-view .attraction-content.workshop:after {
-      background-color: rgba(26, 188, 156, 0.6); }
+      background-color: rgba(41, 128, 185, 0.6); }
     .schedule-view .attraction-content.keynote:after {
-      background-color: rgba(52, 152, 219, 0.6); }
+      background-color: rgba(142, 68, 173, 0.6); }
     .schedule-view .attraction-content .attraction-title {
       font-size: calc(12px + 4px);
       font-weight: 500;
@@ -7874,7 +7862,7 @@ a.button {
       font-weight: 500;
       margin-bottom: 0px; }
       .schedule-view .attraction-content .attraction-speakers * {
-        color: #FFFFFF; }
+        color: #ffffff; }
     .schedule-view .attraction-content .attraction-type-tag {
       position: absolute;
       bottom: -25px;
@@ -7885,25 +7873,25 @@ a.button {
       line-height: 25px;
       padding: 0px 14px; }
       .schedule-view .attraction-content .attraction-type-tag.talk-attraction {
-        background: #25a25a;
+        background: #107360;
         text-transform: capitalize;
         font-weight: 500;
-        color: #FFFFFF; }
+        color: #ffffff; }
       .schedule-view .attraction-content .attraction-type-tag.lightningtalk-attraction {
-        background-color: #25a25a;
+        background-color: #1e8449;
         text-transform: capitalize;
         font-weight: 500;
-        color: #FFFFFF; }
+        color: #ffffff; }
       .schedule-view .attraction-content .attraction-type-tag.workshop-attraction {
-        background: #148f77;
+        background: #20638f;
         text-transform: capitalize;
         font-weight: 500;
-        color: #FFFFFF; }
+        color: #ffffff; }
       .schedule-view .attraction-content .attraction-type-tag.keynote-attraction {
-        background: #217dbb;
+        background: #703688;
         text-transform: capitalize;
         font-weight: 500;
-        color: #FFFFFF; }
+        color: #ffffff; }
 
 .nav-bar-title {
   text-transform: capitalize; }
@@ -7912,16 +7900,16 @@ a.button {
   margin-top: 0px !important; }
 
 .attraction-view {
-  background: #EAEAEA; }
+  background: #eaeaea; }
   .attraction-view .speaker-image {
     height: 100vw; }
   .attraction-view .attraction-details {
     min-height: 70px;
     padding: 22px;
-    background-color: #2b2b2b;
+    background-color: #181818;
     margin-top: -8px; }
     .attraction-view .attraction-details .attraction-title {
-      color: #FFFFFF;
+      color: #ffffff;
       font-size: 16px;
       font-size: calc(12px + 4px);
       font-weight: 500;
@@ -7943,3 +7931,49 @@ a.button {
     .attraction-view .attraction-description ul {
       list-style: inherit;
       padding-left: 40px; }
+
+.sponsors-view {
+  background: #eaeaea; }
+  .sponsors-view .tabs-striped .tabs {
+    background-color: #313131; }
+    .sponsors-view .tabs-striped .tabs .tab-item {
+      max-width: none; }
+  .sponsors-view .tab-title {
+    color: #ffffff;
+    font-size: calc(12px + 2px);
+    font-weight: 400; }
+  .sponsors-view .tab-title.tab-item.tab-item-active {
+    border-color: #e8e242;
+    margin-top: 0px;
+    border-width: 0px 0px 4px 0px !important; }
+    .sponsors-view .tab-title.tab-item.tab-item-active .tab-title {
+      font-weight: 600; }
+  .sponsors-view .sponsor-details .item.title {
+    background-color: #e8e242; }
+  .sponsors-view .sponsor-details .item-image {
+    border-top: none; }
+  .sponsors-view .sponsor-name {
+    text-align: center;
+    text-transform: uppercase;
+    color: #313131;
+    font-weight: bold;
+    font-size: calc(12px + 6px); }
+  .sponsors-view .sponsor-description {
+    margin-top: 0px; }
+  .sponsors-view .sponsor-logo {
+    height: 100vw; }
+  .sponsors-view .sponsor-buttons {
+    background-color: #ffffff; }
+    .sponsors-view .sponsor-buttons .row, .sponsors-view .sponsor-buttons .col {
+      padding: 0px; }
+    .sponsors-view .sponsor-buttons .button {
+      margin: 0px;
+      border-color: #313131;
+      color: #313131; }
+      .sponsors-view .sponsor-buttons .button.activated {
+        background-color: #313131;
+        color: #ffffff; }
+    .sponsors-view .sponsor-buttons .col:first-child {
+      margin-right: 8px; }
+    .sponsors-view .sponsor-buttons .col:last-child {
+      margin-left: 8px; }

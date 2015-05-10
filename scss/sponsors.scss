@@ -1,4 +1,5 @@
-.sponsors-view{
+.sponsors-view
+{
   
   background: $content-bg;
 
@@ -12,19 +13,22 @@
     }
   }
 
-  .tab-title{
+  .tab-title
+  {
     color: $top-bar-color;
     @include cssCalc("font-size", "#{($font-size)} + 2px");
     font-weight:400;
   }
 
-  .tab-title.tab-item.tab-item-active{
+  .tab-title.tab-item.tab-item-active
+  {
 
     border-color: $main-menu-bg;
     margin-top: 0px;
     border-width: 0px 0px 4px 0px !important;
 
-    .tab-title{
+    .tab-title
+    {
       font-weight:600;
     }
   }
@@ -42,7 +46,8 @@
     }
   }
   
-  .sponsor-name{
+  .sponsor-name
+  {
     text-align: center;
     text-transform: uppercase;
     color: $top-bar-bg;
@@ -50,11 +55,13 @@
     @include cssCalc("font-size", "#{($font-size)} + 6px");
   }
   
-  .sponsor-description{
+  .sponsor-description
+  {
     margin-top:0px;
   }
 
-  .sponsor-logo{
+  .sponsor-logo
+  {
     height: 100vw;
   }
   
@@ -89,6 +96,5 @@
     {
       margin-left:8px;
     }
-  }  
-    
+  }    
 }

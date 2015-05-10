@@ -1,4 +1,5 @@
-.nav-bar-title{
+.nav-bar-title
+{
   text-transform: capitalize;
 }
 
@@ -7,51 +8,59 @@
   margin-top:0px !important;
 }
 
-.attraction-view{
+.attraction-view
+{
   background: $content-bg;
 
-  .speaker-image{
+  .speaker-image
+  {
     height: 100vw;
   }
 
-  .attraction-details{
+  .attraction-details
+  {
     min-height: 70px;
     padding: 22px;
     background-color: darken($content-color, 10);
     margin-top: -8px;
 
-    .attraction-title{
+    .attraction-title
+    {
       color: $top-bar-color;
       font-size: 16px;
       @include cssCalc("font-size", "#{($font-size)} + 4px");
       font-weight: 500;
       display:block;
     }
-    .attraction-speakers{
+    .attraction-speakers
+    {
       color: $main-menu-bg;
       @include cssCalc("font-size", "#{($font-size)} + 2px");
       font-weight: 400;
       display:block;
 
 
-      .attraction-speaker{
+      .attraction-speaker
+      {
         color: inherit;
         font-weight: 600;
       }
 
-      .attraction-speaker-concat{
+      .attraction-speaker-concat
+      {
         color: inherit;
         font-weight: 400;
       }
     }
   }
-  .attraction-description{
+  .attraction-description
+  {
     @include cssCalc("font-size", "#{($font-size)} + 2px");
     padding:20px;
 
-    ul{
+    ul
+    {
       list-style: inherit;
-      // -webkit-padding-start: 40px;
       padding-left: 40px;
     }
   }

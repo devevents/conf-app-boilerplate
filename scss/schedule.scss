@@ -1,5 +1,6 @@
 .schedule-view
 {
+  
   background: $content-bg;
 
   .tabs-striped .tabs
@@ -12,33 +13,39 @@
     }
   }
 
-  .tab-title{
+  .tab-title
+  {
     color: $top-bar-color;
     @include cssCalc("font-size", "#{($font-size)} + 2px");
     font-weight:400;
   }
 
-  .tab-title.tab-item.tab-item-active{
+  .tab-title.tab-item.tab-item-active
+  {
 
     border-color: $main-menu-bg;
     margin-top: 0px;
     border-width: 0px 0px 4px 0px !important;
 
-    .tab-title{
+    .tab-title
+    {
       font-weight:600;
     }
 
   }
 
-  .attraction-time{
+  .attraction-time
+  {
     margin-top:10px;
 
-    .time-start{
+    .time-start
+    {
       display: block;
       @include cssCalc("font-size", "#{($font-size)} + 2px");
     }
 
-    .time-finish{
+    .time-finish
+    {
       @include cssCalc("font-size", "#{($font-size)} - 1px");
       color: lighten($content-color, 10);
       display: block;
@@ -57,7 +64,8 @@
     position: relative;
     background-size: 100%;
 
-    &.general{
+    &.general
+    {
       min-height: 20vw;
     }
 
@@ -66,12 +74,14 @@
       margin-bottom: 25px;
       border-radius: 5px 5px 0px 0px;
 
-      .attraction-title, .attraction-room{
+      .attraction-title, .attraction-room
+      {
         color: $attraction-color;
       }
     }
 
-    &.talk:after, &.lightningtalk:after, &.workshop:after, &.keynote:after {
+    &.talk:after, &.lightningtalk:after, &.workshop:after, &.keynote:after 
+    {
       content: "";
       display: block;
       position: absolute;
@@ -82,20 +92,25 @@
       border-radius: 5px 5px 0px 0px;
     }
 
-    &.talk:after{
+    &.talk:after
+    {
       background-color: rgba($talk-bg-color, 0.6);
     }
-    &.lightningtalk:after{
+    &.lightningtalk:after
+    {
       background-color: rgba($lightningtalk-bg-color, 0.6);
     }
-    &.workshop:after{
+    &.workshop:after
+    {
       background-color: rgba($workshop-bg-color, 0.6);
     }
-    &.keynote:after{
+    &.keynote:after
+    {
       background-color: rgba($keynote-bg-color, 0.6);
     }	
 
-    .attraction-title{
+    .attraction-title
+    {
       @include cssCalc("font-size", "#{($font-size)} + 4px");
       font-weight:500;
       margin:0px;
@@ -103,7 +118,8 @@
       z-index: 100;
     }
 
-    .attraction-room{
+    .attraction-room
+    {
       font-size:$font-size;
       z-index: 100;
       position:relative;
@@ -164,8 +180,7 @@
         text-transform: capitalize;
         font-weight: 500;
         color: $attraction-color;
-      }
-	  
+      }	  
     }
   }
 }

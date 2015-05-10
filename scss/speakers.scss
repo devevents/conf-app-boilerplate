@@ -1,4 +1,6 @@
-.speakers-view{
+.speakers-view
+{
+  
   background: $content-bg;
 
   .speaker
@@ -14,7 +16,8 @@
     }
   }
 
-  .speaker-name{
+  .speaker-name
+  {
     text-align: center;
     text-transform: uppercase;
     color: $top-bar-bg;
@@ -22,7 +25,8 @@
     // font-size: 18px;
     @include cssCalc("font-size", "#{($font-size)} + 6px");
   }
-  .speaker-bio{
+  .speaker-bio
+  {
     margin-top:0px;
   }
 
@@ -51,7 +55,7 @@
 
   .speaker-buttons
   {
-    background-color: $speaker-actions-bg;
+    background-color: $actions-bg;
 
     .row,
     .col

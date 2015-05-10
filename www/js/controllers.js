@@ -4,15 +4,44 @@ angular.module('confboilerplate.controllers', [])
 
 })
 
-.controller('AboutCtrl', function($scope) {
+.controller('AboutCtrl', function($scope, $http, About, $ionicLoading) {
+  $scope.about = [];
+  $ionicLoading.show({
+    template: 'Loading...'
+  });
 
+  About.get()
+  .then(function(about){
+    $scope.about = about;
+    $ionicLoading.hide();
+  },function(err){
+    $ionicLoading.hide();
+  });
+
+  $scope.goToUrl = function(url){
+    //use inAppBrowser plugin
+    window.open(url, '_blank', 'location=yes');
+  }
 })
 
-.controller('LocationCtrl', function($scope) {
-  $scope.position = {
-    lat: -3.771020,
-    lng: -38.483531
-  };
+.controller('LocationCtrl', function($scope, $http, Position, $ionicLoading) {
+  $scope.position = [];
+  $ionicLoading.show({
+    template: 'Loading...'
+  });
+
+  Position.get()
+  .then(function(position){
+    $scope.position = position;
+    $ionicLoading.hide();
+  },function(err){
+    $ionicLoading.hide();
+  });
+
+  $scope.goToUrl = function(url){
+    //use inAppBrowser plugin
+    window.open(url, '_blank', 'location=yes');
+  }
 
   $scope.$on('mapInitialized', function(attraction, map) {
     $scope.map = map;

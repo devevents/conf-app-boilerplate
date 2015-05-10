@@ -1,16 +1,18 @@
-[
-  {
-    "nameEvent": "Front in Exampler",
-    "edition": "2º Edition",
-    "webSite": "http://exemplo.com.br",
-    "email": "exampler@exampler.com",
-    "github": "http://github.com/examplerName",
-    "twitter": "http://twitter.com/examplerName",
-    "facebook": "http://facebook.com/examplerName",
-    "photo": "http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in."    
-  }
-]
+{ "about":
+  [
+    {
+      "nameEvent": "Front in Exampler",
+      "edition": "2º Edition",
+      "webSite": "http://exemplo.com.br",
+      "email": "exampler@exampler.com",
+      "github": "http://github.com/examplerName",
+      "twitter": "http://twitter.com/examplerName",
+      "facebook": "http://facebook.com/examplerName",
+      "photo": "http://devevents.github.io/conf-app-boilerplate/static/img/speakers/speaker.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in."    
+    }
+  ]
+}

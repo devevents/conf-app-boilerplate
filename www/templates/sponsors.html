@@ -1,28 +1,42 @@
 <ion-view class="sponsors-view">
-  <ion-nav-title>
+  <ion-nav-title class="has-tabs-top">
     <span>Sponsors</span>
   </ion-nav-title>
-  <ion-content>
-  <div class="card" ng-repeat="sponsor in sponsors">
-    <div class="list sponsor" >
-      <div class="item title">
-        <h2 class="sponsor-name">{{sponsor.name}}</h2>
-      </div>
-      <div class="item item-image">
-        <img class="full-image sponsor-image" ng-src="{{sponsor.logo}}">
-      </div>
-      <div class="item item-body">
-        <p class="sponsor-bio" ng-bind-html="sponsor.description | rawHtml">
-        </p>
-        <div class="sponsor-buttons">
-          <div class="row">
-            <div ng-if="sponsor.website" class="col">
-              <a href="" ng-click="goToUrl('http://{{sponsor.website}}')" class="button button-small button-outline button-block">Visit Website</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </ion-content>
+
+  <ion-tabs class="tabs-striped tabs-top tabs-color-light">
+
+    <ion-tab class="tab-title" title="GOLD">
+        <ion-pane>
+            <ion-content class="padding">
+                <div>
+                    <div class="card" ng-repeat="sponsor in sponsors.gold">
+                        <div sponsor-details class="sponsor-details"></div>
+                    </div>
+                </div>
+            </ion-content>
+      </ion-pane>
+    </ion-tab>
+    <ion-tab class="tab-title" title="SILVER">
+        <ion-pane>
+            <ion-content class="padding">
+                <div>
+                    <div class="card" ng-repeat="sponsor in sponsors.silver">
+                        <div sponsor-details class="sponsor-details"></div>
+                    </div>
+                </div>
+            </ion-content>
+      </ion-pane>
+    </ion-tab>
+    <ion-tab class="tab-title" title="BRONZE">
+        <ion-pane>
+            <ion-content class="padding">
+                <div>
+                    <div class="card" ng-repeat="sponsor in sponsors.bronze">
+                        <div sponsor-details class="sponsor-details"></div>
+                    </div>
+                </div>
+            </ion-content>
+      </ion-pane>
+    </ion-tab>
+  </ion-tabs>
 </ion-view>

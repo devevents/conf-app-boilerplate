@@ -24,26 +24,21 @@ angular.module('confboilerplate.controllers', [])
   }
 })
 
-.controller('LocationCtrl', function($scope, $http, Position, $ionicLoading) {
-  $scope.position = [];
+.controller('LocationCtrl', function($scope, $http, Location, $ionicLoading) {
+  $scope.location = [];
   $ionicLoading.show({
     template: 'Loading...'
   });
 
-  Position.get()
-  .then(function(position){
-    $scope.position = position;
+  Location.get()
+  .then(function(location){
+    $scope.location = location;
     $ionicLoading.hide();
   },function(err){
     $ionicLoading.hide();
   });
 
-  $scope.goToUrl = function(url){
-    //use inAppBrowser plugin
-    window.open(url, '_blank', 'location=yes');
-  }
-
-  $scope.$on('mapInitialized', function(attraction, map) {
+  $scope.$on('mapInitialized', function(map) {
     $scope.map = map;
   });
 })

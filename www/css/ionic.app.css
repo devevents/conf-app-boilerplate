@@ -7728,6 +7728,40 @@ a.button {
 .main-menu ion-item.item:last-child {
   border-bottom: none; }
 
+.about-view {
+  background: #eaeaea; }
+  .about-view .about .item-image {
+    border-top: none; }
+  .about-view .about-name {
+    text-align: center;
+    text-transform: uppercase;
+    color: #313131;
+    font-weight: bold;
+    font-size: calc(12px + 6px); }
+  .about-view .about-edition {
+    text-align: center;
+    text-transform: uppercase;
+    color: #313131;
+    font-weight: bold;
+    font-size: calc(12px + 2px); }
+  .about-view .about-description {
+    margin-top: 0px; }
+  .about-view .about-buttons {
+    background-color: #ffffff; }
+    .about-view .about-buttons .row, .about-view .about-buttons .col {
+      padding: 0px; }
+    .about-view .about-buttons .button {
+      margin: 8px;
+      border-color: #313131;
+      color: #313131; }
+      .about-view .about-buttons .button.activated {
+        background-color: #313131;
+        color: #ffffff; }
+    .about-view .about-buttons .col:first-child {
+      margin-right: 8px; }
+    .about-view .about-buttons .col:last-child {
+      margin-left: 8px; }
+
 .location-view .map {
   height: calc((((100vh - 44px) * 65) /100)); }
 .location-view .location-position {
@@ -7736,7 +7770,7 @@ a.button {
   .location-view .location-position .row {
     height: 50%;
     margin: 0px; }
-  .location-view .location-position .location-name {
+  .location-view .location-position .location-place {
     margin-bottom: 5px; }
 
 .speakers-view {

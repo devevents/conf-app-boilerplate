@@ -6,7 +6,7 @@ angular.module('confboilerplate.services', [])
   this.get = function() {
     var dfd = $q.defer();
 
-    $http.get('about.json')
+    $http.get('http://devevents.github.io/conf-app-boilerplate/data/about.json')
     .success(function(data) {
       dfd.resolve(data);
     })
@@ -23,7 +23,7 @@ angular.module('confboilerplate.services', [])
   this.get = function() {
     var dfd = $q.defer();
 
-    $http.get('location.json')
+    $http.get('http://devevents.github.io/conf-app-boilerplate/data/location.json')
     .success(function(data) {
       dfd.resolve(data);
     })

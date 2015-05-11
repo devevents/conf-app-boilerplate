@@ -1,0 +1,9 @@
+{
+  "place": "Fac. exampler",
+  "adress": "Av. exampler, 111",
+  "city": "Frontilandia",
+  "position": {
+    "lat": "-3.771020",
+    "lng": "-38.483531"
+  }   
+}

@@ -3,31 +3,21 @@
     <span>Location</span>
   </ion-nav-title>
   <ion-content>
-      <div class="card">
-        <div class="item item-avatar" >
-            <img src="{{position.photo}}"> 
-            <h2>{{position.nameEvent}} </h2>
-            <p>{{position.edition}}</p>
+    <div>
+      <div class="item item-body">
+        <map class="map" data-tap-disabled="true" center="{{location.position.lat}},{{location.position.lng}}" zoom="15" disable-default-u-i="true">
+            <marker position="{{location.position.lat}},{{location.position.lng}}" visible="true"></marker>
+        </map>
+    </div>
+
+    <div class="location-position">
+      <div class="row">
+        <div class="col col-top">
+          <p class="location-place"><strong>{{location.place}}</strong></p>
+          <p>{{location.address}}</p>
+          <p>{{location.city}}</p>
         </div>
-        <div class="item item-body">
-           <map class="map" data-tap-disabled="true" center="{{position.position.lat}},{{position.position.lng}}" zoom="15" disable-default-u-i="true">
-              <marker position="{{position.position.lat}},{{position.position.lng}}" visible="true"></marker>
-           </map>
-        </div>
-        <div class="item item-body ">
-         <strong>City:</strong> {{position.city}}
-        </div>
-        <div class="item item-body ">
-          <strong>Adress:</strong> {{position.adress}}
-        </div>
-        <div class="item item-body ">
-          <strong> Place:</strong> {{position.place}}
-        </div>
-        <div class="item item-body">
-          <strong> Date:</strong> {{position.day}} / {{position.month}} / {{position.year}}
-        </div>
-        
-      </div>    
-    
+      </div>
+    </div>
   </ion-content>
 </ion-view>

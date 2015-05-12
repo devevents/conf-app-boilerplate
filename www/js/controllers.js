@@ -151,8 +151,4 @@ angular.module('confboilerplate.controllers', [])
     //use inAppBrowser plugin
     window.open(url, '_blank', 'location=yes');
   }
-})
-
-.controller('PartnersCtrl', function($scope) {
-
 });

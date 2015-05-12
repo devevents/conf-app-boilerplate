@@ -8011,3 +8011,33 @@ a.button {
       margin-right: 8px; }
     .sponsors-view .sponsor-buttons .col:last-child {
       margin-left: 8px; }
+
+.partners-view {
+  background: #eaeaea; }
+  .partners-view .partner .item.title {
+    background-color: #e8e242; }
+  .partners-view .partner .item-image {
+    border-top: none; }
+  .partners-view .partner-name {
+    text-align: center;
+    text-transform: uppercase;
+    color: #313131;
+    font-weight: bold;
+    font-size: calc(12px + 6px); }
+  .partners-view .partner-description {
+    margin-top: 0px; }
+  .partners-view .partner-buttons {
+    background-color: #ffffff; }
+    .partners-view .partner-buttons .row, .partners-view .partner-buttons .col {
+      padding: 0px; }
+    .partners-view .partner-buttons .button {
+      margin: 0px;
+      border-color: #313131;
+      color: #313131; }
+      .partners-view .partner-buttons .button.activated {
+        background-color: #313131;
+        color: #ffffff; }
+    .partners-view .partner-buttons .col:first-child {
+      margin-right: 8px; }
+    .partners-view .partner-buttons .col:last-child {
+      margin-left: 8px; }

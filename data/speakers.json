@@ -6,7 +6,7 @@
     "company":"Company 1",
     "twitter":"example1",
     "tags":["Company", "Framework"],
-    "event_id":"2"
+    "attraction_id":"2"
   },
   {
     "name":"Speaker 2",
@@ -15,6 +15,6 @@
     "company":"Company 2",
     "twitter":"example2",
     "tags":["Company", "Framework"],
-    "event_id":"5"
+    "attraction_id":"5"
   }
 ]

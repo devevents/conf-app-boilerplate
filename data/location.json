@@ -1,6 +1,6 @@
 {
   "place": "Example University",
-  "adress": "Example Avenue, 111",
+  "address": "Example Avenue, 111",
   "city": "Example City",
   "position": {
     "lat": "-3.771020",

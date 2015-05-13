@@ -4,10 +4,10 @@
   "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.",
   "logo": "http://devevents.github.io/conf-app-boilerplate/static/img/about/logo.png",
   "contact": {  
-    "website": "exemple.com.br",
-    "email": "example@conf.com",
+    "website": "example.com",
+    "email": "conf@example.com",
     "twitter": "@example",
     "facebook": "example.conf",  
-    "github": "example"
+    "github": "example.conf"
   }   
 }

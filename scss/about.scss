@@ -5,6 +5,12 @@
 
   .about
   {
+
+    .item.title
+    {
+      background-color: $main-menu-bg;
+    }
+
     .item-image
     {
       border-top: none;
@@ -17,17 +23,14 @@
     text-transform: uppercase;
     color: $top-bar-bg;
     font-weight: bold;
-    // font-size: 18px;
     @include cssCalc("font-size", "#{($font-size)} + 6px");
   }
   
   .about-edition
   {
     text-align: center;
-    text-transform: uppercase;
     color: $top-bar-bg;
     font-weight: bold;
-    // font-size: 18px;
     @include cssCalc("font-size", "#{($font-size)} + 2px");
   }
   

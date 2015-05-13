@@ -7730,6 +7730,8 @@ a.button {
 
 .about-view {
   background: #eaeaea; }
+  .about-view .about .item.title {
+    background-color: #e8e242; }
   .about-view .about .item-image {
     border-top: none; }
   .about-view .about-name {
@@ -7740,7 +7742,6 @@ a.button {
     font-size: calc(12px + 6px); }
   .about-view .about-edition {
     text-align: center;
-    text-transform: uppercase;
     color: #313131;
     font-weight: bold;
     font-size: calc(12px + 2px); }

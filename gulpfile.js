@@ -6,12 +6,39 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var notify = require('gulp-notify');
+var growl = require('gulp-notify-growl');
+var jscs = require('gulp-jscs');
+var jshint = require('gulp-jshint');
 
 var paths = {
-  sass: ['./scss/**/*.scss']
+  sass: ['./scss/**/*.scss'],
+  lint: ['./www/app/**/*.js'],
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['lint', 'sass']);
+
+gulp.task('lint', ['jshint', 'jscs']);
+
+gulp.task('jscs', function () {
+  gulp.src('js/*.js')
+    .pipe(jscs())
+    .pipe(notify({
+      title: 'JSCS',
+      message: 'JSCS Passed.'
+    }));
+});
+
+gulp.task('jshint', function () {
+  gulp.src('js/*.js')
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(jshint.reporter('fail'))
+    .pipe(notify({
+      title: 'JSHint',
+      message: 'JSHint Passed.',
+    }));
+});
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
@@ -29,6 +56,7 @@ gulp.task('sass', function(done) {
 
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
+  gulp.watch(paths.lint, ['lint']);
 });
 
 gulp.task('install', ['git-check'], function() {

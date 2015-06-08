@@ -4,7 +4,7 @@
 
 This project uses [JSCS](http://jscs.info) to enforce rules relating to code style; check out the
 the `.jscsrc` file and try to remain consistent with the prevailing style even if particular
-details aren't tested.
+details aren't tested. The `.editorconfig` file is also here to help you :)
 
 ##Good Practices
 

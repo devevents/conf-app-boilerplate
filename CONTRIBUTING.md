@@ -18,6 +18,16 @@ be numbered with the following format:
 
 `<major>.<minor>.<patch>`
 
+##Reporting a bug
+
+1. Look for any related issues [here](https://github.com/devevents/conf-app-boilerplate/issues).
+2. If you find an issue that seems related, please comment there instead of creating a new issue. If it is determined to be a unique bug, we will let you know that a new issue can be created.
+3. If you find no related issue, create a new issue by clicking [here](https://github.com/devevents/conf-app-boilerplate/issues/new).
+If we find an issue that's related, we will reference it and close your issue, showing you where to follow the bug.
+4. Tell us important details like what operating system you are using.
+5. Include any errors that may be displayed (see [Chrome Console instructions](https://developer.chrome.com/devtools/docs/console#opening_the_console) for how to do that).
+6. Update us if you have any new info, or if the problem resolves itself!
+
 ##The 5 magic steps
 
 1. Fork it!

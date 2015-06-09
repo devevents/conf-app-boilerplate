@@ -1,5 +1,14 @@
 #Contributing
 
+##Table of Contents
+
+- [Styleguide](/styleguide)
+- [Good Practices](/good_practices)
+- [Versioning](/versioning)
+- [Reporting a bug](/reporting-a-bug)
+- [The 5 magic steps](the-5-magic-steps)
+- [License](/license)
+
 ##Styleguide
 
 This project uses [JSCS](http://jscs.info) to enforce rules relating to code style; check out the

@@ -1,6 +1,6 @@
 .schedule-view
 {
-  
+
   background: $content-bg;
 
   .tabs-striped .tabs
@@ -80,7 +80,7 @@
       }
     }
 
-    &.talk:after, &.lightningtalk:after, &.workshop:after, &.keynote:after 
+    &.talk:after, &.lightningtalk:after, &.workshop:after, &.keynote:after
     {
       content: "";
       display: block;
@@ -96,18 +96,6 @@
     {
       background-color: rgba($talk-bg-color, 0.6);
     }
-    &.lightningtalk:after
-    {
-      background-color: rgba($lightningtalk-bg-color, 0.6);
-    }
-    &.workshop:after
-    {
-      background-color: rgba($workshop-bg-color, 0.6);
-    }
-    &.keynote:after
-    {
-      background-color: rgba($keynote-bg-color, 0.6);
-    }	
 
     .attraction-title
     {
@@ -157,30 +145,7 @@
         font-weight: 500;
         color: $attraction-color;
       }
-	  
-      &.lightningtalk-attraction
-      {
-        background-color: darken($lightningtalk-bg-color, 10);
-        text-transform: capitalize;
-        font-weight: 500;
-        color: $attraction-color;
-      }
-	  
-      &.workshop-attraction
-      {
-        background: darken($workshop-bg-color, 10);
-        text-transform: capitalize;
-        font-weight: 500;
-        color: $attraction-color;
-      }
-	  
-      &.keynote-attraction
-      {
-        background: darken($keynote-bg-color, 10);
-        text-transform: capitalize;
-        font-weight: 500;
-        color: $attraction-color;
-      }	  
     }
   }
 }
+

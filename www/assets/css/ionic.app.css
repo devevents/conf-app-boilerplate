@@ -7690,8 +7690,8 @@ a.button {
 
 .main-menu ion-content {
   background-color: #e8e242; }
-.main-menu .menu-header-bar-title {
-  width: 75%;
+.main-menu .menu-logo {
+  width: 70%;
   color: #ffffff;
   position: absolute;
   bottom: 10px;

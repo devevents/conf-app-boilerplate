@@ -5,7 +5,7 @@ angular.module('confboilerplate.location.services')
   this.get = function() {
     var dfd = $q.defer();
 
-    $http.get('http://devevents.github.io/conf-app-boilerplate/data/location.json')
+    $http.get('assets/data/location.json')
     .success(function(data) {
       dfd.resolve(data);
     })

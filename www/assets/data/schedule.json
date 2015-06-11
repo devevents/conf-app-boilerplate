@@ -56,7 +56,7 @@
       "start":"10:30",
       "finish":"11:30"
     },
-    "type":"lightningtalk",
+    "type":"talk",
     "speakers":[
       {
         "name":"Speaker Example 2",

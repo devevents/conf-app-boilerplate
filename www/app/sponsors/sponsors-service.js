@@ -5,7 +5,7 @@ angular.module('confboilerplate.sponsors.services')
   this.get = function() {
     var dfd = $q.defer();
 
-    $http.get('http://devevents.github.io/conf-app-boilerplate/data/sponsors.json')
+    $http.get('assets/data/sponsors.json')
     .success(function(data) {
 
       var gold = _.filter(data, function(sponsor){ return sponsor.type =="gold" }),

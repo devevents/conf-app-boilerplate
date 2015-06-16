@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.speakers.controllers')
 
 .controller('SpeakersCtrl', function($scope, $http, Speakers, $ionicLoading) {
@@ -18,5 +20,5 @@ angular.module('confboilerplate.speakers.controllers')
   $scope.goToUrl = function(url){
     //use inAppBrowser plugin
     window.open(url, '_blank', 'location=yes');
-  }
+  };
 });

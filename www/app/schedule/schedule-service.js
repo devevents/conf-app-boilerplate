@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.schedule.services')
 
 .service('Schedule', function ($http, $q){
@@ -8,8 +10,8 @@ angular.module('confboilerplate.schedule.services')
     $http.get('assets/data/schedule.json')
     .success(function(data) {
 
-      var day1 = _.filter(data, function(attraction){ return attraction.date =="day1" }),
-          day2 = _.filter(data, function(attraction){ return attraction.date =="day2" });
+      var day1 = _.filter(data, function(attraction){ return attraction.date ==="day1"; }),
+          day2 = _.filter(data, function(attraction){ return attraction.date ==="day2"; });
 
       dfd.resolve({
         "day1": day1,
@@ -26,7 +28,7 @@ angular.module('confboilerplate.schedule.services')
   this.getAttraction = function(attractionId){
     var dfd = $q.defer();
 
-    $http.get('http://devevents.github.io/conf-app-boilerplate/data/schedule.json')
+    $http.get('assets/data/schedule.json')
     .success(function(data) {
       var attraction = _.find(data, {id: attractionId});
       dfd.resolve(attraction);

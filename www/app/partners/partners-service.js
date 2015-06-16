@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.partners.services')
 
 .service('Partners', function ($http, $q){

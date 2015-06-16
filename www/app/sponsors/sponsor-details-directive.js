@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.sponsors.directives')
 
 .directive('sponsorDetails', function() {

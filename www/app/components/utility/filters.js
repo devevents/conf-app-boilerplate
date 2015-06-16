@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.filters', [])
 
 .filter('rawHtml', ['$sce', function($sce){

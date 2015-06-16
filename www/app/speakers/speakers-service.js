@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.speakers.services')
 
 .service('Speakers', function ($http, $q){

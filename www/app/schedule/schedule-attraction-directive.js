@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.schedule.directives')
 
 .directive('scheduleAttraction', function() {

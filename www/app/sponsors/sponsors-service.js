@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.sponsors.services')
 
 .service('Sponsors', function ($http, $q){
@@ -8,9 +10,9 @@ angular.module('confboilerplate.sponsors.services')
     $http.get('assets/data/sponsors.json')
     .success(function(data) {
 
-      var gold = _.filter(data, function(sponsor){ return sponsor.type =="gold" }),
-          silver = _.filter(data, function(sponsor){ return sponsor.type =="silver" }),
-          bronze = _.filter(data, function(sponsor){ return sponsor.type =="bronze" });
+      var gold = _.filter(data, function(sponsor){ return sponsor.type ==="gold"; }),
+          silver = _.filter(data, function(sponsor){ return sponsor.type ==="silver"; }),
+          bronze = _.filter(data, function(sponsor){ return sponsor.type ==="bronze"; });
 
       dfd.resolve({
         "gold": gold,

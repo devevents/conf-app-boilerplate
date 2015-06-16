@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.schedule.controllers')
 
 .controller('ScheduleCtrl', function($scope, Schedule, $ionicLoading) {

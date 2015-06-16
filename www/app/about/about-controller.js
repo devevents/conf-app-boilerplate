@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.about.controllers')
 
 .controller('AboutCtrl', function($scope, $http, About, $ionicLoading) {
@@ -17,5 +19,5 @@ angular.module('confboilerplate.about.controllers')
   $scope.goToUrl = function(url){
     //use inAppBrowser plugin
     window.open(url, '_blank', 'location=yes');
-  }
+  };
 });

@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.location.controllers')
 
 .controller('LocationCtrl', function($scope, $http, Location, $ionicLoading) {

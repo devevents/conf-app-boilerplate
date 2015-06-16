@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.location.services')
 
 .service('Location', function ($http, $q){

@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.sponsors.controllers')
 
 .controller('SponsorsCtrl', function($scope, Sponsors, $ionicLoading) {
@@ -14,9 +16,9 @@ angular.module('confboilerplate.sponsors.controllers')
   },function(err){
     $ionicLoading.hide();
   });
-  
+
   $scope.goToUrl = function(url){
     //use inAppBrowser plugin
     window.open(url, '_blank', 'location=yes');
-  }  
+  };
 });

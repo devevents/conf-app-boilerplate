@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.schedule.controllers')
 
 .controller('AttractionCtrl', function($scope, Schedule, $stateParams, $ionicLoading) {

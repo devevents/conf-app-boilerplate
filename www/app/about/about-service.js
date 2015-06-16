@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('confboilerplate.about.services')
 
 .service('About', function ($http, $q){

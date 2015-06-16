@@ -1,0 +1,22 @@
+ion-view.sponsors-view
+  ion-nav-title.has-tabs-top
+    span Sponsors
+  ion-tabs.tabs-striped.tabs-top.tabs-color-light
+    ion-tab.tab-title(title="GOLD")
+      ion-pane
+        ion-content.padding
+          div
+            .card(ng-repeat="sponsor in sponsors.gold")
+              .sponsor-details(sponsor-details="")
+    ion-tab.tab-title(title="SILVER")
+      ion-pane
+        ion-content.padding
+          div
+            .card(ng-repeat="sponsor in sponsors.silver")
+              .sponsor-details(sponsor-details="")
+    ion-tab.tab-title(title="BRONZE")
+      ion-pane
+        ion-content.padding
+          div
+            .card(ng-repeat="sponsor in sponsors.bronze")
+              .sponsor-details(sponsor-details="")

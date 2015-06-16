@@ -1,0 +1,29 @@
+ion-side-menus(enable-menu-with-back-views="false")
+  ion-side-menu-content
+    ion-nav-bar.bar.app-top-bar
+      ion-nav-back-button
+      ion-nav-buttons(side="left")
+        button.button.button-icon.button-clear.ion-navicon(menu-toggle="left")
+    ion-nav-view(name="menuContent")
+  ion-side-menu.main-menu(side="left")
+    ion-content(scroll="false")
+      ion-list
+        ion-item.item.item-icon-left(nav-clear="", menu-close="", ui-sref="app.about")
+          i.icon.ion-ios-information
+          h2.menu-text About
+        ion-item.item.item-icon-left(nav-clear="", menu-close="", ui-sref="app.location")
+          i.icon.ion-ios-location
+          h2.menu-text Location
+        ion-item.item.item-icon-left(nav-clear="", menu-close="", ui-sref="app.speakers")
+          i.icon.ion-speakerphone
+          h2.menu-text Speakers
+        ion-item.item.item-icon-left(nav-clear="", menu-close="", ui-sref="app.schedule")
+          i.icon.ion-calendar
+          h2.menu-text Schedule
+        ion-item.item.item-icon-left(nav-clear="", menu-close="", ui-sref="app.sponsors")
+          i.icon.ion-social-usd
+          h2.menu-text Sponsors
+        ion-item.item.item-icon-left(nav-clear="", menu-close="", ui-sref="app.partners")
+          i.icon.ion-ios-people
+          h2.menu-text Partners
+      img.menu-logo(ng-src="assets/img/conf-boilerplate.png")

@@ -1,0 +1,18 @@
+ion-view.attraction-view
+  ion-nav-buttons(side="right")
+    a.button.button-icon.icon.ion-share.share-attraction(ng-click="shareAttraction(attraction)")
+  ion-nav-title
+    span {{attraction.type}}
+  ion-content
+    ion-slide-box(ng-show != "attraction.speakers.length > 1" auto-play="true" does-continue="true")
+      ion-slide(ng-repeat="speaker in attraction.speakers")
+        div(style="width:100vw; overflow:hidden;")
+          img.speaker-image(ng-src="{{speaker.image}}")
+    img.speaker-image(ng-show="attraction.speakers.length == 1"  ng-src="{{attraction.speakers[0].image}}")
+    .attraction-details
+      span.attraction-title(ng-bind-html="attraction-title")
+      span.attraction-speakers By
+        span.attraction-speaker(ng-repeat="speaker in attraction.speakers") {{speaker.name}}
+        span.attraction-speaker-concat {{$last ? '' : ' & '}}
+    .attraction-description
+        p(ng-bind-html="attraction-description")

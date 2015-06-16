@@ -1,0 +1,22 @@
+ion-view.speakers-view
+	ion-nav-title
+		span Speakers
+	ion-content
+		.card(ng-repeat="speaker in speakers")
+			.list.speaker
+				.item.title
+					h2.speaker-name {{speaker.name}}
+				.item.item-image
+					img.full-image.speaker-image(ng-src="{{speaker.photo}}")
+				.item.item-body
+					.speakers-tags
+						ul.speaker-tags-list
+							li.speaker-tag-item(ng-repeat="tag in speaker-tags")
+								span.badge.badge-energized {{tag}}
+					p.speaker-bio(ng-bind-html="speaker.bio | rawHtml")
+					.speaker-buttons
+						.row
+							.col(ng-if="speaker.twitter")
+								a.button.button-small.button-outline.button-block(ng-click="goToUrl('http://twitter.com/{{speaker.twitter}}')") @{{speaker.twitter}}
+							.col
+								a.button.button-small.button-outline.button-block(ui-sref="app.attraction({attractionId: speaker.attraction_id})") My Talk 

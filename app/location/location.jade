@@ -1,0 +1,17 @@
+ion-view.location-view
+	ion-nav-title
+		span Location 
+	ion-content
+		.item.item-body
+			map.map(data-tap-disabled="true" center="{{location.position.lat}},{{location.position.lng}}" zoom="15" disable-default-u-i="true")
+			maker(position="{{location.position.lat}},{{location.position.lng}}" visible="true")
+		.location-position
+			.row
+				.col.col-top
+					p.location-place
+						strong {{location.place}}
+					p {{location.adress}}
+					p {{location.city}}
+		
+
+

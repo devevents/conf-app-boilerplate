@@ -1,0 +1,16 @@
+ion-view.partners-view
+    ion-nav-title
+      span Partners
+    ion-content
+      .card(ng-repeat="partner in partners")
+        .list.partner 
+          .item.title
+            h2.partner-name {{partner-name}}
+          .item.item-image
+            img.full-image.partner-image(ng-src="{{partner.logo}}")
+          .item.item-body
+            p.partner-description(ng-bind-html="partner.description | rawHtml")
+            .partner-buttons
+              .row
+                .col(ng-if="partner.website")
+                  a.button.button-small.button-outline.button-block(ng-click="goToUrl('http://{{partner.website}}')") Visit Website

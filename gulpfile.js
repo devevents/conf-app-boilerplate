@@ -14,7 +14,7 @@ var jshint = require('gulp-jshint');
 
 var paths = {
   jade: ['./src/**/*.jade'],
-  sass: ['./scss/**/*.scss'],
+  sass: ['./src/**/*.scss'],
   js: ['./www/app/**/*.js', './assets/lib/**/*.js'],
 };
 
@@ -43,7 +43,7 @@ gulp.task('jshint', function () {
 });
 
 gulp.task('sass', function(done) {
-  gulp.src('./scss/ionic.app.scss')
+  gulp.src('./src/styles.scss')
     .pipe(sass({
       errLogToConsole: true
     }))

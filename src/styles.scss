@@ -1,0 +1,24 @@
+/*
+To customize the look and feel of your application, you can override the variables
+in ionic's _variables.scss file.
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "../www/assets/lib/ionic/scss/ionic";
+
+// Include custom styles
+
+// General
+@import "app/general"; // General app settings
+// Sections
+@import "app/menu/menu"; // Sidemenu settings
+@import "app/about/about"; // "About" settings
+@import "app/location/location"; // "Location" settings
+@import "app/speakers/speakers"; // "Speakers" settings
+@import "app/schedule/schedule"; // "Schedule" settings
+@import "app/schedule/attraction"; // "Attraction" view settings
+@import "app/sponsors/sponsors"; // "Sponsors" settings
+@import "app/partners/partners"; // "Partners" settings

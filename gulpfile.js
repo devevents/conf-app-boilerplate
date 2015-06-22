@@ -147,10 +147,9 @@ gulp.task('scripts', function () {
     .pipe(typescript({
       noImplicitAny:false,
       sortOutput: true,
-      out: './www/app/app.js',
       typescript: require('typescript')
     }))
   //.pipe(uglify())
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./www/app'));
+    .pipe(gulp.dest('./www'));
 });

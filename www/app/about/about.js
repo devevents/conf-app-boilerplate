@@ -1,10 +1,10 @@
+///<reference path="../../typings/tsd.d.ts" /> 
 'use strict';
-
 angular.module('confboilerplate.about', [
-
-  'confboilerplate.about.controllers',
-  'confboilerplate.about.services'
+    'confboilerplate.about.controllers',
+    'confboilerplate.about.services'
 ]);
+angular.module('confboilerplate.about.controllers', ['underscore', 'ionic']);
+angular.module('confboilerplate.about.services', ['underscore', 'ionic']);
 
-angular.module('confboilerplate.about.controllers', ['underscore','ionic']);
-angular.module('confboilerplate.about.services', ['underscore','ionic']);
+//# sourceMappingURL=../../app/about/about.js.map

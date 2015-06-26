@@ -24,9 +24,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^1.3.3",
     "gulp-sourcemaps": "^1.5.2",
+    "gulp-typescript": "^2.7.7",
     "gulp-util": "^3.0.4",
     "jshint-stylish": "^2.0.0",
-    "shelljs": "^0.4.0"
+    "shelljs": "^0.4.0",
+    "tsd": "^0.6.3",
+    "typescript": "^1.5.0-beta"
   },
   "cordovaPlugins": [
     "org.apache.cordova.device",

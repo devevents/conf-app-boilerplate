@@ -1,0 +1,5 @@
+{
+	"compilerOptions": {
+		"out": "./www/app/app.js"	
+	}
+}

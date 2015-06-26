@@ -6,6 +6,8 @@
   },
   "dependencies": {
     "ngmap": "~1.7.9",
-    "underscore": "~1.8.3"
+    "underscore": "~1.8.3",
+    "ionic": "~1.0.0",
+    "cordova": "~3.4.0"
   }
 }

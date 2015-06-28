@@ -9,8 +9,6 @@ var rename = require('gulp-rename');
 var sh = require('shelljs');
 var notify = require('gulp-notify');
 var growl = require('gulp-notify-growl');
-var jscs = require('gulp-jscs');
-var jshint = require('gulp-jshint');
 var typescript = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
 var html2Ts = require('gulp-html-to-ts');
@@ -26,28 +24,6 @@ var paths = {
 };
 
 gulp.task('default', ['scripts', 'sass', 'jade']);
-
-gulp.task('lint', ['jshint', 'jscs']);
-
-gulp.task('jscs', function () {
-  gulp.src(paths.js)
-    .pipe(jscs())
-    .pipe(notify({
-    title: 'JSCS',
-    message: 'JSCS Passed.'
-  }));
-});
-
-gulp.task('jshint', function () {
-  gulp.src(paths.js)
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(jshint.reporter('fail'))
-    .pipe(notify({
-    title: 'JSHint',
-    message: 'JSHint Passed.',
-  }));
-});
 
 gulp.task('sass', function (done) {
   gulp.src('./src/styles.scss')

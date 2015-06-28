@@ -11,7 +11,6 @@ var notify = require('gulp-notify');
 var growl = require('gulp-notify-growl');
 var typescript = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
-var html2Ts = require('gulp-html-to-ts');
 
 var path = require('path');
 var tsd = require('tsd');

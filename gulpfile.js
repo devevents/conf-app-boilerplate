@@ -22,10 +22,10 @@ var tsdApi = new tsd.getAPI('tsd.json');
 var paths = {
   jade: ['./src/**/*.jade'],
   sass: ['./src/**/*.scss'],
-  js: ['./www/app/**/*.js', './assets/lib/**/*.js'],
+  ts: ['./src/**/*.ts']
 };
 
-gulp.task('default', ['lint', 'sass', 'jade']);
+gulp.task('default', ['scripts', 'sass', 'jade']);
 
 gulp.task('lint', ['jshint', 'jscs']);
 
@@ -64,17 +64,17 @@ gulp.task('sass', function (done) {
 });
 
 gulp.task('jade', function () {
-  return gulp.src([paths.jade])
+  return gulp.src(paths.jade)
     .pipe(jade({ pretty: true }))
-    .pipe(html2Ts())
+// TODO: use templatecache
+//    .pipe(html2Ts())
     .pipe(gulp.dest('./www/'));
 });
 
 gulp.task('watch', function () {
-  gulp.watch(paths.js, ['lint']);
+  gulp.watch(paths.ts, ['scripts']);
   gulp.watch(paths.jade, ['jade']);
   gulp.watch(paths.sass, ['sass']);
-
 });
 
 gulp.task('install', ['git-check', 'tsd:install'], function () {

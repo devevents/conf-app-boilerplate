@@ -2,6 +2,8 @@
   "name": "conf-app-boilerplate",
   "app_id": "",
   "gulpStartupTasks": [
+    "scripts",
+    "jade",
     "sass",
     "watch"
   ],

@@ -17,22 +17,22 @@ var tsd = require('tsd');
 var tsdApi = new tsd.getAPI('tsd.json');
 
 var paths = {
+  ts: ['./src/**/*.ts'],
   jade: ['./src/**/*.jade'],
-  sass: ['./src/**/*.scss'],
-  ts: ['./src/**/*.ts']
+  sass: ['./src/**/*.scss']
 };
 
 gulp.task('default', ['scripts', 'sass', 'jade']);
 
 gulp.task('sass', function (done) {
-  gulp.src('./src/styles.scss')
+  gulp.src('./src/app/styles.scss')
     .pipe(sass({
-    errLogToConsole: true
-  }))
+      errLogToConsole: true
+    }))
     .pipe(gulp.dest('./www/assets/css/'))
     .pipe(minifyCss({
-    keepSpecialComments: 0
-  }))
+      keepSpecialComments: 0
+    }))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./www/assets/css/'))
     .on('end', done);

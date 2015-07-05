@@ -7,18 +7,18 @@ in ionic's _variables.scss file.
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
-@import "../www/assets/lib/ionic/scss/ionic";
+@import "../../www/assets/lib/ionic/scss/ionic";
 
 // Include custom styles
 
 // General
-@import "app/general"; // General app settings
+@import "general"; // General app settings
 // Sections
-@import "app/menu/menu"; // Sidemenu settings
-@import "app/about/about"; // "About" settings
-@import "app/location/location"; // "Location" settings
-@import "app/speakers/speakers"; // "Speakers" settings
-@import "app/schedule/schedule"; // "Schedule" settings
-@import "app/schedule/attraction"; // "Attraction" view settings
-@import "app/sponsors/sponsors"; // "Sponsors" settings
-@import "app/partners/partners"; // "Partners" settings
+@import "menu/menu"; // Sidemenu settings
+@import "about/about"; // "About" settings
+@import "location/location"; // "Location" settings
+@import "speakers/speakers"; // "Speakers" settings
+@import "schedule/schedule"; // "Schedule" settings
+@import "schedule/attraction"; // "Attraction" view settings
+@import "sponsors/sponsors"; // "Sponsors" settings
+@import "partners/partners"; // "Partners" settings

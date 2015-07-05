@@ -1,0 +1,20 @@
+
+<ion-view class="photos-view">
+  <ion-nav-title><span>@</span>{{ photo.user.username | uppercase }}</ion-nav-title>
+  <ion-content>
+    <div class="photos single-photo"><img ng-src="{{ photo.images.low_resolution.url }}" class="photo-img"/>
+      <div class="photo-body">
+        <div class="user"><img ng-src="{{ photo.user.profile_picture }}" class="user-picture"/>
+          <h3 class="name">{{ photo.user.full_name }}</h3>
+        </div>
+        <p class="photo-text">{{ photo.caption.text }}</p>
+      </div>
+      <div ng-if="photo.comments.count &gt;= 1" class="comments">
+        <h1 class="comment-title">{{ photo.comments.count }} Comments</h1>
+        <div ng-repeat="comment in photo.comments.data" class="comment"><img ng-src="{{ comment.from.profile_picture }}" class="comment-img"/><span class="comment-username">@</span>{{ comment.from.username }}
+          <p class="comment-text">{{ comment.text }}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

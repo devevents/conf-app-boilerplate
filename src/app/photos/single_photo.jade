@@ -1,0 +1,19 @@
+ion-view.photos-view
+  ion-nav-title
+    span @
+    {{ photo.user.username | uppercase }}
+  ion-content
+    .photos.single-photo
+      img.photo-img(ng-src="{{ photo.images.low_resolution.url }}")
+      .photo-body
+        .user
+          img.user-picture(ng-src="{{ photo.user.profile_picture }}")
+          h3.name {{ photo.user.full_name }}
+        p.photo-text {{ photo.caption.text }}
+      .comments(ng-if="photo.comments.count >= 1")
+        h1.comment-title {{ photo.comments.count }} Comments
+        .comment(ng-repeat="comment in photo.comments.data")
+          img.comment-img(ng-src="{{ comment.from.profile_picture }}")
+          span.comment-username @
+          {{ comment.from.username }}
+          p.comment-text {{ comment.text }}

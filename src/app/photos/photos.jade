@@ -1,0 +1,10 @@
+ion-view.photos-view
+  ion-nav-title
+    span #
+    {{ tag | uppercase }}
+  ion-content
+    #photos-container
+      .photo(ng-repeat="photo in photos")
+        a(ui-sref="app.single_photo({ photo_id: photo.id })")
+          img.photo-img(ng-src="{{ photo.images.low_resolution.url }}")
+      button.btn-more(ng-show="next_url" ng-click="loadPhotos()") Carregar Mais

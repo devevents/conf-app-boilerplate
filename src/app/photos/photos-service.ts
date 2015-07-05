@@ -28,7 +28,7 @@ angular.module('confboilerplate.photos.services')
       var params =  {
         'params': {
           'client_id': API.CLIENT_ID,
-          'CALLBACK': 'JSON_CALLBACK'
+          'callback': 'JSON_CALLBACK'
         }
       };
 

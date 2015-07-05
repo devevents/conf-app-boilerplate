@@ -9,11 +9,8 @@ var rename = require('gulp-rename');
 var sh = require('shelljs');
 var notify = require('gulp-notify');
 var growl = require('gulp-notify-growl');
-var jscs = require('gulp-jscs');
-var jshint = require('gulp-jshint');
 var typescript = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
-var html2Ts = require('gulp-html-to-ts');
 
 var path = require('path');
 var tsd = require('tsd');
@@ -22,32 +19,10 @@ var tsdApi = new tsd.getAPI('tsd.json');
 var paths = {
   jade: ['./src/**/*.jade'],
   sass: ['./src/**/*.scss'],
-  js: ['./www/app/**/*.js', './assets/lib/**/*.js'],
+  ts: ['./src/**/*.ts']
 };
 
-gulp.task('default', ['lint', 'sass', 'jade']);
-
-gulp.task('lint', ['jshint', 'jscs']);
-
-gulp.task('jscs', function () {
-  gulp.src(paths.js)
-    .pipe(jscs())
-    .pipe(notify({
-    title: 'JSCS',
-    message: 'JSCS Passed.'
-  }));
-});
-
-gulp.task('jshint', function () {
-  gulp.src(paths.js)
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(jshint.reporter('fail'))
-    .pipe(notify({
-    title: 'JSHint',
-    message: 'JSHint Passed.',
-  }));
-});
+gulp.task('default', ['scripts', 'sass', 'jade']);
 
 gulp.task('sass', function (done) {
   gulp.src('./src/styles.scss')
@@ -64,17 +39,17 @@ gulp.task('sass', function (done) {
 });
 
 gulp.task('jade', function () {
-  return gulp.src([paths.jade])
+  return gulp.src(paths.jade)
     .pipe(jade({ pretty: true }))
-    .pipe(html2Ts())
+// TODO: use templatecache
+//    .pipe(html2Ts())
     .pipe(gulp.dest('./www/'));
 });
 
 gulp.task('watch', function () {
-  gulp.watch(paths.js, ['lint']);
+  gulp.watch(paths.ts, ['scripts']);
   gulp.watch(paths.jade, ['jade']);
   gulp.watch(paths.sass, ['sass']);
-
 });
 
 gulp.task('install', ['git-check', 'tsd:install'], function () {

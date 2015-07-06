@@ -7903,6 +7903,95 @@ a.button {
         font-weight: 500;
         color: #ffffff; }
 
+.photos-view {
+  background: #eaeaea; }
+  .photos-view .photo {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 50%; }
+    .photos-view .photo.single-photo {
+      width: 100%; }
+    .photos-view .photo .photo-img {
+      width: 100%;
+      height: auto; }
+    .photos-view .photo .photo-body {
+      float: left;
+      margin: 15px 0 0 0;
+      padding: 0; }
+      .photos-view .photo .photo-body .photo-text {
+        float: left;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px; }
+    .photos-view .photo .photo-body .user {
+      float: left;
+      width: 100%; }
+    .photos-view .photo .user .user-picture {
+      float: left;
+      padding: 5px;
+      margin: 10px;
+      width: 35%;
+      background: #F4F4F4;
+      border: 1px solid #CCC; }
+    .photos-view .photo .user .name {
+      margin: 0;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: #000; }
+    .photos-view .photo .user .username {
+      margin: 40px 0 5px 0;
+      display: block;
+      text-align: center;
+      font-size: 23px;
+      color: #333; }
+    .photos-view .photo .comments {
+      float: left;
+      width: 100%;
+      margin: 10px 0; }
+      .photos-view .photo .comments .comment-title {
+        float: left;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        background: #e8e242;
+        color: #333;
+        padding: 5px 0;
+        border-bottom: 1px solid #e8e242; }
+      .photos-view .photo .comments .comment {
+        float: left;
+        width: 100%;
+        background: #FFF;
+        border-bottom: 1px solid #CCC; }
+        .photos-view .photo .comments .comment .comment-img {
+          float: left;
+          width: 15%;
+          height: auto; }
+        .photos-view .photo .comments .comment .comment-username {
+          float: left;
+          margin: 10px 0 0 10px;
+          font-weight: bold;
+          font-size: 16px; }
+        .photos-view .photo .comments .comment .comment-text {
+          float: left;
+          width: 75%;
+          padding: 10px;
+          font-size: 16px; }
+  .photos-view .btn-more {
+    float: left;
+    padding: 20px 0;
+    margin: 30px 5%;
+    width: 90%;
+    font-size: 18px;
+    border: none;
+    color: #333;
+    background: #e8e242;
+    -webkit-box-shadow: 0 7px 0 #afa915;
+    box-shadow: 0 7px 0 #afa915; }
+
 .nav-bar-title {
   text-transform: capitalize; }
 

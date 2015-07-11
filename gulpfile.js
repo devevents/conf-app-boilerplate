@@ -7,8 +7,6 @@ var jade = require('gulp-jade');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
-var notify = require('gulp-notify');
-var growl = require('gulp-notify-growl');
 var typescript = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
 

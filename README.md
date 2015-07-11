@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/devevents/conf-app-boilerplate.svg?branch=master)](https://travis-ci.org/devevents/conf-app-boilerplate)
 [![Codeship Status for devevents/conf-app-boilerplate](https://codeship.com/projects/fd7e1b10-0a37-0133-3a25-5ae6dce7dd45/status?branch=master)](https://codeship.com/projects/90677)
+[![Dependency Status](https://david-dm.org/devevents/conf-app-boilerplate.png)](https://david-dm.org/devevents/conf-app-boilerplate)
+[![devDependency Status](https://david-dm.org/devevents/conf-app-boilerplate/dev-status.svg)](https://david-dm.org/devevents/conf-app-boilerplate#info=devDependencies)
 
 # Conf App Boilerplate
 

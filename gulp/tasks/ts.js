@@ -1,9 +1,9 @@
 'use strict';
 
 // Necessary Plugins
-var gulp          = require('gulp')
-    ,paths          = require('../paths')
-    ,typescript     = require('gulp-typescript')
+var gulp        = require('gulp')
+    ,paths      = require('../paths')
+    ,typescript = require('gulp-typescript')
     ,sourcemaps = require('gulp-sourcemaps');
 
 // Call Typescript Compiler

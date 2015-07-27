@@ -1,11 +1,11 @@
 'use strict';
 
 // Necessary Plugins
-var gulp     = require('gulp')
-    ,paths   = require('../paths')
-    ,sass    = require('gulp-sass')
+var gulp       = require('gulp')
+    ,paths     = require('../paths')
+    ,sass      = require('gulp-sass')
     ,minifyCss = require('gulp-minify-css')
-    ,rename = require('gulp-rename');
+    ,rename    = require('gulp-rename');
 
 // Call Sass
 module.exports = gulp.task('sass', function () {

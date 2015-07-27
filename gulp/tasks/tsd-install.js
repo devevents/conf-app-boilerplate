@@ -1,13 +1,13 @@
 'use strict';
 
 // Necessary Plugins
-var gulp     = require('gulp')
-    ,gutil   = require('gulp-util')
-    ,paths   = require('../paths')
-    ,bower   = require('bower')
-    ,concat  = require('gulp-concat')
-    ,path = require('path')
-    ,tsd = require('tsd')
+var gulp    = require('gulp')
+    ,gutil  = require('gulp-util')
+    ,paths  = require('../paths')
+    ,bower  = require('bower')
+    ,concat = require('gulp-concat')
+    ,path   = require('path')
+    ,tsd    = require('tsd')
     ,tsdApi = new tsd.getAPI('tsd.json');
 
 //

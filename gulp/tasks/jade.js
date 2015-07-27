@@ -2,12 +2,14 @@
 
 // Necessary Plugins
 var gulp     = require('gulp')
+    ,plumber   = require('gulp-plumber')
     ,paths   = require('../paths')
     ,jade    = require('gulp-jade');
 
 // Call Jade to compile Templates
 module.exports = gulp.task('jade', function () {
   return gulp.src(paths.source.jade)
+    .pipe(plumber())
     .pipe(jade({pretty: true }))
     // TODO: use templatecache
     //.pipe(html2Ts())

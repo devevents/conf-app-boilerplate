@@ -2,6 +2,7 @@
 
 // Necessary Plugins
 var gulp       = require('gulp')
+    ,plumber   = require('gulp-plumber')
     ,paths     = require('../paths')
     ,sass      = require('gulp-sass')
     ,minifyCss = require('gulp-minify-css')
@@ -10,6 +11,7 @@ var gulp       = require('gulp')
 // Call Sass
 module.exports = gulp.task('sass', function () {
   return gulp.src(paths.source.files.sass)
+    .pipe(plumber())
     .pipe(sass({
       errLogToConsole: true
     }))

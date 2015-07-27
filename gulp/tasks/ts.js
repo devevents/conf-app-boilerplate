@@ -2,6 +2,7 @@
 
 // Necessary Plugins
 var gulp        = require('gulp')
+    ,plumber   = require('gulp-plumber')
     ,paths      = require('../paths')
     ,typescript = require('gulp-typescript')
     ,sourcemaps = require('gulp-sourcemaps');
@@ -9,6 +10,7 @@ var gulp        = require('gulp')
 // Call Typescript Compiler
 module.exports = gulp.task('ts', function () {
   return gulp.src(paths.source.ts)
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(typescript({
       noImplicitAny:false,

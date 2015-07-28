@@ -17,6 +17,6 @@ module.exports = gulp.task('ts', function () {
       sortOutput: true,
       typescript: require('typescript')
     }))
-    .pipe(sourcemaps.write('paths.build.sourceMaps'))
-    .pipe(gulp.dest('paths.build.html'));
+    .pipe(sourcemaps.write(paths.build.sourceMaps))
+    .pipe(gulp.dest(paths.build.html));
 });

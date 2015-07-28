@@ -1,10 +1,10 @@
 'use strict';
 
 // Necessary Plugins
-var gulp     = require('gulp')
-    ,gutil   = require('gulp-util')
-    ,paths   = require('../paths')
-    ,sh = require('shelljs');
+var gulp    = require('gulp')
+    ,gutil  = require('gulp-util')
+    ,paths  = require('../paths')
+    ,sh     = require('shelljs');
 
 //
 module.exports = gulp.task('git-check', function (done) {

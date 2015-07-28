@@ -3,4 +3,4 @@
 var gulp = require('gulp');
 
 // Default task
-module.exports = gulp.task('default', ['ts', 'sass', 'jade']);
+module.exports = gulp.task('default', ['ts', 'sass', 'jade', 'watch', 'browser-sync']);

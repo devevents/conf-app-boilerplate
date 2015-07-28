@@ -60,4 +60,34 @@ Now you can see the website running in:
 - `localhost:8100` if you're using *Ionic CLI*
 - `localhost:8100/ionic-lab` if you're using *Ionic CLI* + *Ionic Lab*
 
+## Structure
 
+The basic structure of the project is given in the following way:
+
+```
+|-- gulp/
+|-- src/
+|   |-- app/
+|       |-- about/
+|       |-- components/
+|       |-- menu/
+|       |-- partners/
+|       |-- photos/
+|       |-- schedule/
+|       |-- speakers/
+|       |-- sponsors/
+|       |-- app.ts
+|       |-- general.scss
+|       |-- index.jade
+|       |-- styles.scss
+|   |-- typings/
+|-- www/
+|-- .bowerrc
+|-- bower.json
+|-- config.xml
+|-- gulpfile.js
+|-- ionic.project
+|-- package.json
+|-- tsconfig.json
+|-- tsd.json
+```

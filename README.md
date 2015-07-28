@@ -23,3 +23,41 @@ By default, we have the following sections:
 - *Sponsors* - to show the brand of your sponsors.
 - *Partners* - to show the brand of your partners.
 
+## Getting Started
+
+1. Make sure you have [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/).
+
+2. Clone this repository:
+
+  ```sh
+  $ git clone git://github.com/devevents/conf-app-boilerplate.git my_event
+  ```
+
+3. Install all dependencies:
+
+  ```sh
+  $ cd my_event
+  $ npm install
+  $ bower install
+  ```
+
+4. And finally run:
+
+  ```sh
+  # Via Gulp + BrowserSync
+  $ gulp
+
+  # Via Gulp + Ionic CLI
+  $ ionic serve
+
+  # Via Gulp + Ionic CLI (Using Ionic Lab to test the app on multiple platforms
+  $ ionic serve --lab
+  ```
+
+Now you can see the website running in:
+
+- `localhost:3000` if you're using *BrowserSync*
+- `localhost:8100` if you're using *Ionic CLI*
+- `localhost:8100/ionic-lab` if you're using *Ionic CLI* + *Ionic Lab*
+
+

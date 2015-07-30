@@ -1,7 +1,6 @@
 ion-view.photos-view
   ion-nav-title
-    span @
-    {{ photo.user.username | uppercase }}
+    span @ {{ photo.user.username | uppercase }}
   ion-content
     .photo.single-photo
       img.photo-img(ng-src="{{ photo.images.low_resolution.url }}")

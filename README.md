@@ -91,3 +91,25 @@ The basic structure of the project is given in the following way:
 |-- tsconfig.json
 |-- tsd.json
 ```
+
+Now let's find out what each one of those files and folders mean.
+
+P.S.: Some very commom files - or less important - are shown here, such as the `.md` ones - *README*, *LICENSE* *CONTRIBUTING* -, the CIs tracking files like `.codeclimate.yml` or `.travis.yml` and others.
+
+### [`gulp/`](/gulp)
+
+### [`src/app`](/gulp)
+
+### [`src/typings`](/gulp)
+
+### [`www/`](/gulp)
+
+### [`.bowerrc`](.bowerrc) and [`bower.json`](bower.json)
+
+### [`gulpfile.js`](gulpfile.js)
+
+### [`ionic.project`](ionic.project)
+
+### [`package.json`](package.json)
+
+### [`tsconfig.json`](tsconfig.json) and [`tsd.json`](tsd.json)
